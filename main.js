@@ -8,9 +8,33 @@ const initIcons = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   initIcons();
-  
+
   const yearSpan = document.getElementById('current-year');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear().toString();
+
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+
+      mobileMenu.classList.toggle('hidden', isOpen);
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.innerHTML = `<i data-lucide="${isOpen ? 'menu' : 'x'}" class="w-5 h-5"></i>`;
+      initIcons();
+    });
+
+    mobileMenuLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.innerHTML = '<i data-lucide="menu" class="w-5 h-5"></i>';
+        initIcons();
+      });
+    });
+  }
 });
 
 // Case Studies Data
@@ -21,10 +45,11 @@ const CASE_STUDIES = {
     category: "UX / Frontend Strategy",
     color: "from-purple-500 to-indigo-600",
     icon: 'gamepad-2',
+    note: "Nota sobre confidencialidad: No se incluyen materiales visuales por restricciones de confidencialidad.",
     sections: [
       {
-        title: "🧩 Contexto",
-        content: "Participé en el desarrollo de campañas digitales gamificadas para marcas de consumo masivo (como Actimel y Danacol), donde las experiencias eran conceptos a construir desde cero, no productos existentes.",
+        title: "Contexto",
+        content: "Participé en campañas digitales gamificadas para marcas de consumo masivo (Actimel, Danacol), donde las experiencias se construían desde cero bajo restricciones de tiempo, presupuesto y requisitos legales.",
         items: [
           "Tiempos de implementación muy ajustados",
           "Cambios constantes en el alcance",
@@ -33,15 +58,15 @@ const CASE_STUDIES = {
         ]
       },
       {
-        title: "🎯 Problema",
+        title: "Problema",
         content: "El principal desafío era construir experiencias gamificadas funcionales y claras para el usuario, equilibrando tiempos de desarrollo, presupuesto, complejidad técnica y objetivos del negocio."
       },
       {
-        title: "👩‍💻 Mi rol",
+        title: "Mi rol",
         content: "Trabajé como Frontend Developer con fuerte participación en la definición de la experiencia. Traduje ideas y requerimientos en flujos concretos, tomando decisiones sobre interacción y viabilidad técnica."
       },
       {
-        title: "🛠️ Qué hice",
+        title: "Qué hice",
         items: [
           "Definí flujos de interacción donde la experiencia no estaba especificada",
           "Integré mecánicas gamificadas en el recorrido del usuario",
@@ -49,16 +74,19 @@ const CASE_STUDIES = {
           "Colaboré en la reducción de complejidad sin perder valor"
         ]
       },
-      {
-        title: "🎮 Ejemplos concretos",
-        content: "Actimel – Campaña Sonic (Público infantil): Definición de lógica de juego en web, trasladando interacciones tipo entorno 3D/Unity a la web tradicional. Danacol – Público adulto: Simplificación de la interfaz para reducir carga cognitiva y priorizar acciones directas."
+    {
+        title: "Ejemplos concretos",
+        items: [
+          "Actimel – Campaña Sonic (público infantil)\nDefinición de la lógica de juego en web, adaptando interacciones inspiradas en entornos 3D/Unity a una experiencia clara y accesible.",
+          "Danacol – (Público adulto)\nRediseño de la interfaz para reducir la carga cognitiva y enfocar la experiencia en acciones simples y directas."
+        ]
       },
       {
-        title: "🧠 Enfoque UX",
+        title: "Enfoque UX",
         content: "Foco en equilibrar tres dimensiones: Necesidades del negocio, Experiencia del usuario y Viabilidad técnica."
       },
       {
-        title: "📚 Aprendizajes",
+        title: "Aprendizajes",
         items: [
           "Diseñar en alta incertidumbre",
           "Decisiones bajo restricciones reales",
@@ -68,68 +96,165 @@ const CASE_STUDIES = {
     ]
   },
   'case-2': {
-    title: "Oportunidades de Mejora",
-    subtitle: "Análisis de fricciones en experiencias promocionales digitales",
-    category: "User Research",
-    color: "from-violet-500 to-purple-700",
-    icon: 'search',
+  title: "Oportunidades de Mejora",
+  subtitle: "Análisis de fricciones en experiencias promocionales digitales",
+  category: "User Research",
+  color: "from-violet-500 to-purple-700",
+  icon: 'search',
+  note: "Nota sobre confidencialidad: No se incluyen materiales visuales por restricciones de confidencialidad.",
+  sections: [
+    {
+      title: "Contexto",
+      content: "En campañas digitales de consumo masivo, las decisiones suelen priorizar la salida a tiempo por sobre la optimización de la experiencia. Al tratarse de iniciativas de corta duración, en muchos casos no se implementaban herramientas de analytics avanzadas, limitando la capacidad de aprendizaje y mejora basada en datos.",
+      items: [
+        "Tiempos de implementación acotados",
+        "Presupuesto limitado",
+        "Requisitos legales",
+        "Objetivos comerciales"
+      ]
+    },
+    {
+      title: "Objetivo",
+      content: "Analizar patrones de fricción en la experiencia de usuario e identificar oportunidades de mejora, considerando las restricciones reales del negocio."
+    },
+    {
+      title: "Enfoque",
+      content: "Análisis cualitativo basado en la observación de múltiples proyectos, la identificación de patrones recurrentes en los flujos de interacción y la evaluación heurística desde la perspectiva del usuario."
+    },
+    {
+      title: "Hallazgos",
+      items: [
+        "Flujos con múltiples pasos que incrementaban la complejidad de la experiencia",
+        "Falta de claridad en reglas y condiciones de participación",
+        "Bajo nivel de feedback durante la interacción",
+        "Incremento de la carga cognitiva derivado de requisitos legales"
+      ]
+    },
+    {
+      title: "Insights",
+      items: [
+        "Cuando el esfuerzo requerido para completar la experiencia supera el valor percibido, aumenta significativamente la probabilidad de abandono del flujo.",
+        "La falta de claridad en los pasos y condiciones genera incertidumbre, impactando negativamente en la confianza y el engagement del usuario.",
+        "La baja visibilidad del progreso y del resultado esperado reduce la motivación para completar la experiencia.",
+        "La ausencia de instrumentación de datos en campañas de alta tracción limita la capacidad de aprendizaje y mejora continua del producto."
+      ]
+    },
+    {
+      title: "Oportunidades de mejora",
+      items: [
+        "Simplificar los flujos de interacción",
+        "Mejorar la claridad en cada paso del recorrido",
+        "Incorporar feedback más visible durante la experiencia",
+        "Reducir la carga cognitiva del usuario",
+        "Hacer más explícito el valor de la participación"
+      ]
+    },
+    {
+      title: "Oportunidad de research",
+      content: "Estas hipótesis podrían validarse mediante entrevistas a usuarios, tests de usabilidad y análisis de comportamiento, permitiendo priorizar mejoras basadas en evidencia y reducir la incertidumbre en la toma de decisiones de producto."
+    }
+  ]
+}
+};
+const ABOUT_CARDS = {
+  'about-research': {
+    title: "User Behavior",
+    subtitle: "Understanding how users interact and where friction appears",
+    category: "Behavior Analysis",
+    color: "from-violet-500 to-fuchsia-600",
+    icon: 'target',
     sections: [
       {
-        title: "🧩 Contexto",
-        content: "En campañas de consumo masivo, las decisiones suelen priorizar la salida a tiempo. Al ser campañas cortas, carecían de analytics avanzados, dificultando la optimización basada en datos.",
+        title: "Focus",
+        content: "I look at how people move through digital experiences, what they understand, where they hesitate and which parts of the flow create unnecessary effort."
+      },
+      {
+        title: "What I observe",
         items: [
-          "Tiempos de implementación",
-          "Presupuesto limitado",
-          "Requisitos legales",
-          "Objetivos comerciales"
+          "Moments of friction or confusion",
+          "Patterns in user decisions and behavior",
+          "Mismatch between user expectations and interface logic",
+          "Opportunities to simplify the experience"
         ]
+      }
+    ]
+  },
+  'about-frontend': {
+    title: "Product Thinking",
+    subtitle: "Making decisions balancing business, UX and technical constraints",
+    category: "Product Strategy",
+    color: "from-indigo-500 to-blue-600",
+    icon: 'brain',
+    sections: [
+      {
+        title: "Focus",
+        content: "I approach product decisions by connecting user needs, business goals and technical feasibility, especially when time, scope or budget are limited."
       },
       {
-        title: "🎯 Objetivo",
-        content: "Analizar patrones de fricción e identificar oportunidades de mejora desde una perspectiva centrada en el usuario, considerando las restricciones reales del negocio."
-      },
-      {
-        title: "🔍 Enfoque",
-        content: "Análisis basado en la observación de múltiples proyectos, identificación de patrones recurrentes y evaluación heurística desde la perspectiva del usuario."
-      },
-      {
-        title: "⚠️ Hallazgos",
+        title: "How I contribute",
         items: [
-          "Flujos con múltiples pasos que aumentaban la complejidad",
-          "Falta de claridad en reglas y condiciones de participación",
-          "Bajo nivel de feedback durante la interacción",
-          "Incremento de la carga cognitiva debido a requisitos legales"
+          "Prioritizing clarity over unnecessary complexity",
+          "Balancing impact and implementation effort",
+          "Translating insights into product decisions",
+          "Connecting design, business and development perspectives"
         ]
+      }
+    ]
+  },
+  'about-gamification': {
+    title: "Gamified Experiences",
+    subtitle: "Designing engaging interactions adapted to different users",
+    category: "Engagement",
+    color: "from-purple-500 to-indigo-700",
+    icon: 'gamepad-2',
+    sections: [
+      {
+        title: "Focus",
+        content: "I use game mechanics as a way to make digital flows more engaging, clear and motivating, adapting the interaction to the user and the context."
       },
       {
-        title: "🧠 Insights",
-        content: "Cuando el esfuerzo requerido para completar la experiencia supera el valor percibido, los usuarios tienden a abandonar el flujo. La falta de claridad en los pasos genera incertidumbre y reduce el engagement."
-      },
-      {
-        title: "🚀 Oportunidades de mejora",
+        title: "What I consider",
         items: [
-          "Simplificar los flujos de interacción",
-          "Mejorar la claridad en cada paso",
-          "Incorporar feedback más visible durante la experiencia",
-          "Reducir la carga cognitiva del usuario"
+          "The user's motivation and context",
+          "Clear rules, goals and rewards",
+          "Visible feedback during the interaction",
+          "The right balance between playfulness, effort and conversion"
         ]
+      }
+    ]
+  },
+  'about-ux': {
+    title: "UX under constraints",
+    subtitle: "Designing clear experiences within real-world limitations",
+    category: "Experience Design",
+    color: "from-indigo-500 to-violet-600",
+    icon: 'sliders-horizontal',
+    sections: [
+      {
+        title: "Focus",
+        content: "I design and evaluate experiences considering real constraints such as deadlines, budget, legal requirements, technical scope and business priorities."
       },
       {
-        title: "📊 Oportunidad de research",
-        content: "En un contexto ideal, estas hipótesis podrían validarse mediante entrevistas, tests de usabilidad o análisis de comportamiento para priorizar mejoras basadas en evidencia."
+        title: "Principles",
+        items: [
+          "Reduce cognitive load",
+          "Make the next step clear",
+          "Keep feedback visible and timely",
+          "Protect the user experience while respecting project limits"
+        ]
       }
     ]
   }
-};
+}
 
 // Modal Logic
 window.openModal = (id) => {
-  const study = CASE_STUDIES[id];
+  const study = CASE_STUDIES[id] || ABOUT_CARDS[id];
   if (!study) return;
 
   const modalContainer = document.getElementById('modal-container');
   const modalContent = document.getElementById('modal-content');
-  
+
   if (!modalContainer || !modalContent) return;
 
   // Build the modal HTML
@@ -166,11 +291,13 @@ window.openModal = (id) => {
         </div>
       `).join('')}
 
+      ${study.note ? `
       <div class="pt-8 border-t border-slate-100">
         <div class="flex items-center justify-between text-sm text-slate-400 italic">
-          <span>🔒 Nota sobre confidencialidad: No se incluyen materiales visuales por restricciones de confidencialidad.</span>
+          <span>${study.note}</span>
         </div>
       </div>
+      ` : ''}
     </div>
   `;
 
