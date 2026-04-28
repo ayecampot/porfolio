@@ -158,7 +158,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="min-h-screen flex items-center pt-32 pb-16 px-9 md:px-20 relative overflow-hidden hero-gradient">
+      <section class="min-h-[75vh] md:min-h-screen flex items-center pt-32 pb-10 md:pb-16 px-9 md:px-20 relative overflow-hidden hero-gradient">
         <!-- Background Mesh -->
         <div class="absolute inset-0 mesh-pattern"></div>
 
@@ -194,6 +194,7 @@
                 <div class="glass-card w-full h-full relative overflow-hidden p-0">
                   <img
                     src="src/ayelen-campot-ledo.jpg"
+                    onerror="this.onerror=null; this.src='/portofio-aye/src/ayelen-campot-ledo.jpg';"
                     alt="Retrato de Ayelen Campot Ledo"
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   >
@@ -379,7 +380,7 @@
   </div>
 
   <div class="mt-12 text-center">
-    <a href="src/CV_Ayelen_Campot.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-xl transition-all">
+    <a href="src/CV_Ayelen_Campot.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-xl transition-all" data-gh-fallback-href="/portofio-aye/src/CV_Ayelen_Campot.pdf">
       <i data-lucide="download" class="w-5 h-5"></i> Descargar CV Completo
     </a>
   </div>
@@ -427,6 +428,6 @@
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="main.js"></script>
+    <script src="main.js" onerror="const s=document.createElement('script');s.src='/portofio-aye/main.js';document.body.appendChild(s);"></script>
   </body>
 </html>

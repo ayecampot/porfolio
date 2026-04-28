@@ -12,6 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearSpan = document.getElementById('current-year');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear().toString();
 
+  document.querySelectorAll('[data-gh-fallback-href]').forEach((link) => {
+    const fallbackHref = link.getAttribute('data-gh-fallback-href');
+    if (fallbackHref && window.location.hostname.endsWith('github.io')) {
+      link.setAttribute('href', fallbackHref);
+    }
+  });
+
   const menuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
