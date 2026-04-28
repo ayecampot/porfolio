@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aye | User Research Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                primary: '#8b5cf6',
+                dark: '#1e1b4b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(226, 232, 240, 1);
+        border-radius: 1rem;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      .gradient-text {
+        background: linear-gradient(to right, #7c3aed, #4f46e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+      }
+      
+      /* Animated Background Orbs */
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+        z-index: -1;
+        opacity: 0.8;
+        animation: float 15s infinite alternate ease-in-out;
+      }
+      .orb-1 {
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, #a78bfa, transparent);
+        top: -150px;
+        right: -100px;
+      }
+      .orb-2 {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, #6366f1, transparent);
+        bottom: -50px;
+        left: -100px;
+        animation-delay: -3s;
+        animation-duration: 20s;
+      }
+      .orb-3 {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, #d8b4fe, transparent);
+        top: 30%;
+        right: 15%;
+        animation-delay: -7s;
+        animation-duration: 12s;
+      }
+
+      @keyframes float {
+        0% { transform: translate(0, 0) scale(1); }
+        33% { transform: translate(50px, -80px) scale(1.2); }
+        66% { transform: translate(-40px, 40px) scale(0.8); }
+        100% { transform: translate(0, 0) scale(1); }
+      }
+
+      .hero-gradient {
+        background: linear-gradient(-45deg, #ffffff, #f5f3ff, #ede9fe, #ffffff);
+        background-size: 400% 400%;
+        animation: gradientBG 12s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      .mesh-pattern {
+        background-color: transparent;
+        background-image: radial-gradient(#8b5cf6 0.5px, transparent 0.5px);
+        background-size: 20px 20px;
+        opacity: 0.1;
+      }
+
+      .brand-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+      }
+
+      .tech-logo {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans selection:bg-violet-200 selection:text-violet-900">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-4 md:px-10 py-6">
+      <div class="w-full flex justify-between items-center bg-white/70 backdrop-blur-lg rounded-full px-8 py-4 border border-slate-200/50 shadow-sm">
+        <div class="font-display font-bold text-violet-600 text-2xl tracking-tighter">Aye.</div>
+        <div class="hidden md:flex gap-10 text-sm font-semibold text-slate-600">
+          <a href="#proyectos" class="hover:text-violet-600 transition-colors">Proyectos</a>
+          <a href="#sobre-mi" class="hover:text-violet-600 transition-colors">Sobre mí</a>
+          <a href="#cv" class="hover:text-violet-600 transition-colors">CV</a>
+        </div>
+        <div>
+          <a href="#contacto" class="bg-violet-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-violet-700 hover:shadow-lg transition-all text-sm">Hablemos</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="min-h-screen flex items-center pt-32 pb-20 px-6 md:px-20 relative overflow-hidden hero-gradient">
+        <!-- Background Mesh -->
+        <div class="absolute inset-0 mesh-pattern"></div>
+        
+        <!-- Background Orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+
+        <div class="w-full grid lg:grid-cols-2 gap-20 items-center">
+          <div class="z-10">
+            <h1 class="font-display text-7xl md:text-9xl font-bold leading-[0.9] mb-8 tracking-tighter">
+              Soy <span class="gradient-text">Aye!</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-slate-500 leading-tight mb-10 font-light max-w-xl">
+              Soy <span class="font-semibold text-slate-900 underline decoration-violet-500 decoration-4 underline-offset-8">User Researcher</span> enfocada en 
+              transformar restricciones complejas en experiencias simples y dinámicas.
+            </p>
+            <div class="flex flex-wrap gap-6">
+              <a href="#proyectos" class="bg-violet-600 text-white px-10 py-5 rounded-full font-bold hover:bg-violet-700 hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center gap-3 text-lg">
+                Ver Proyectos <i data-lucide="arrow-right" class="w-6 h-6"></i>
+              </a>
+              <div class="flex items-center gap-4 px-6 py-4 glass-card rounded-full pointer-events-none">
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span class="text-sm font-bold text-slate-700 uppercase tracking-widest">Disponible para proyectos</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative hidden lg:block">
+            <div class="w-3/4 mx-auto aspect-square relative flex items-center justify-center">
+              <div class="absolute inset-0 bg-gradient-to-br from-violet-200/20 to-indigo-200/20 rounded-full blur-3xl animate-pulse"></div>
+              
+              <!-- Main Visual Icon -->
+              <div class="w-4/5 h-4/5 glass-card flex items-center justify-center p-12 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <i data-lucide="sparkles" class="w-48 h-48 text-violet-600/20 group-hover:scale-110 transition-transform duration-700"></i>
+              </div>
+              
+              <!-- Subtle decorative ring -->
+              <div class="absolute inset-0 border-2 border-slate-100 rounded-full -m-10 animate-[spin_30s_linear_infinite] opacity-50 border-dashed"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About (Moved and Inverted Style) -->
+      <section id="sobre-mi" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-8 text-slate-900 leading-tight">Quién soy</h2>
+            <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+              <p>
+                Mi perfil es un puente entre el <span class="text-violet-600 font-semibold">desarrollo técnico</span> y el 
+                <span class="text-indigo-600 font-semibold"> research centrado en el usuario</span>. 
+                Vengo del mundo del desarrollo frontend, lo que me permite entender no solo qué necesita el usuario, 
+                sino también qué es viable construir.
+              </p>
+              <p>
+                Me especializo en identificar fricciones en flujos complejos. Me apasiona la gamificación y cómo 
+                podemos usar mecánicas de juego para mejorar el engagement en contextos reales y a menudo restringidos.
+              </p>
+              <div class="pt-6 grid grid-cols-2 gap-8">
+                <div>
+                  <div class="text-4xl font-bold text-violet-600 mb-2">5+</div>
+                  <div class="text-xs uppercase tracking-widest text-slate-400 font-bold">Años de Exp.</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-bold text-indigo-600 mb-2">20+</div>
+                  <div class="text-xs uppercase tracking-widest text-slate-400 font-bold">Campañas Pro</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-4 hover:border-violet-200 transition-colors">
+              <div class="text-violet-500"><i data-lucide="target" class="w-8 h-8"></i></div>
+              <span class="font-bold text-slate-800">User Research</span>
+            </div>
+            <div class="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-4 hover:border-indigo-200 transition-colors">
+              <div class="text-indigo-500"><i data-lucide="wrench" class="w-8 h-8"></i></div>
+              <span class="font-bold text-slate-800">Frontend Dev</span>
+            </div>
+            <div class="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-4 hover:border-violet-200 transition-colors">
+              <div class="text-violet-500"><i data-lucide="gamepad-2" class="w-8 h-8"></i></div>
+              <span class="font-bold text-slate-800">Gamification</span>
+            </div>
+            <div class="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-4 hover:border-indigo-200 transition-colors">
+              <div class="text-indigo-500"><i data-lucide="brain" class="w-8 h-8"></i></div>
+              <span class="font-bold text-slate-800">UX Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 flex flex-wrap items-center justify-center gap-3">
+          <span class="text-xs font-bold uppercase tracking-widest text-slate-400 mr-2">Herramientas</span>
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <img class="tech-logo" src="https://cdn.simpleicons.org/figma/8b5cf6" alt="Figma">
+            <span class="text-sm font-semibold text-slate-600">Figma</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <img class="tech-logo" src="https://cdn.simpleicons.org/notion/1f2937" alt="Notion">
+            <span class="text-sm font-semibold text-slate-600">Notion</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <img class="tech-logo" src="https://cdn.simpleicons.org/html5/e34f26" alt="HTML5">
+            <span class="text-sm font-semibold text-slate-600">HTML</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <img class="tech-logo" src="https://cdn.simpleicons.org/css/663399" alt="CSS">
+            <span class="text-sm font-semibold text-slate-600">CSS</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-3 shadow-sm">
+            <img class="tech-logo" src="https://cdn.simpleicons.org/javascript/f7df1e" alt="JavaScript">
+            <span class="text-sm font-semibold text-slate-600">JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies (Moved and Inverted Style) -->
+      <section id="proyectos" class="py-24 px-6 bg-slate-900 text-white rounded-3xl mx-6 my-12">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div>
+              <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Caso de Estudio</h2>
+              <p class="text-slate-400 max-w-lg leading-relaxed text-lg">
+                Una mirada profunda a cómo abordo la experiencia de usuario y el research en entornos tecnológicos comerciales de alta velocidad.
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <span class="px-5 py-2 bg-white/10 text-white rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/5">Research</span>
+              <span class="px-5 py-2 bg-white/10 text-white rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-sm border border-white/5">Strategy</span>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-8" id="case-studies-grid">
+            <!-- Study 1 -->
+            <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden cursor-pointer group hover:bg-white/10 transition-all" onclick="openModal('case-1')">
+              <div class="h-56 bg-gradient-to-br from-purple-500 to-indigo-600 p-10 flex items-end relative overflow-hidden">
+                <div class="absolute top-8 right-8 opacity-20 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500">
+                  <i data-lucide="gamepad-2" class="w-12 h-12"></i>
+                </div>
+                <div class="text-white relative z-10">
+                  <span class="text-xs font-bold uppercase tracking-widest opacity-80">UX / Frontend Strategy</span>
+                  <h3 class="font-display text-3xl font-bold mt-2 leading-tight">Experiencias Gamificadas</h3>
+                </div>
+              </div>
+              <div class="p-8">
+                <p class="text-slate-300 text-base leading-relaxed">
+                  Definición bajo restricciones de tiempo, presupuesto y usuario en contextos publicitarios de alto impacto.
+                </p>
+                <div class="mt-6 flex items-center text-violet-400 font-bold text-sm tracking-wide">
+                  VER DETALLES <i data-lucide="arrow-right" class="w-5 h-5 ml-2 animate-pulse"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Study 2 -->
+            <div class="bg-white/5 border border-white/10 rounded-3xl overflow-hidden cursor-pointer group hover:bg-white/10 transition-all" onclick="openModal('case-2')">
+              <div class="h-56 bg-gradient-to-br from-violet-500 to-purple-700 p-10 flex items-end relative overflow-hidden">
+                <div class="absolute top-8 right-8 opacity-20 transform group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-500">
+                  <i data-lucide="search" class="w-12 h-12"></i>
+                </div>
+                <div class="text-white relative z-10">
+                  <span class="text-xs font-bold uppercase tracking-widest opacity-80">User Research</span>
+                  <h3 class="font-display text-3xl font-bold mt-2 leading-tight">Oportunidades de Mejora</h3>
+                </div>
+              </div>
+              <div class="p-8">
+                <p class="text-slate-300 text-base leading-relaxed">
+                  Análisis de fricciones en flujos promocionales digitales y optimización de conversión mediante research.
+                </p>
+                <div class="mt-6 flex items-center text-violet-400 font-bold text-sm tracking-wide">
+                  VER DETALLES <i data-lucide="arrow-right" class="w-5 h-5 ml-2 animate-pulse"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="font-display text-4xl font-bold mb-4 italic">Mi Career Path</h2>
+          <p class="text-slate-600">Un recorrido atípico del código al research.</p>
+        </div>
+        <div class="relative border-l-2 border-violet-100 pl-8 space-y-16 py-8">
+          <div class="relative">
+            <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
+            <div class="glass-card p-8">
+              <span class="text-violet-600 font-bold text-sm tracking-widest uppercase">Presente</span>
+              <h3 class="font-display text-2xl font-bold mt-1 text-slate-800">User Research Strategic Focus</h3>
+              <p class="text-slate-500 font-medium mb-4">Freelance / Concept Exploration</p>
+              <p class="text-slate-600 leading-relaxed">Especialización en metodologías de research aplicadas a productos con restricciones de tiempo y presupuesto. Análisis de patrones de comportamiento y optimización de engagement.</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
+            <div class="glass-card p-8">
+              <span class="text-violet-600 font-bold text-sm tracking-widest uppercase">2019 - 2023</span>
+              <h3 class="font-display text-2xl font-bold mt-1 text-slate-800">Frontend Developer & Exp. Definition</h3>
+              <p class="text-slate-500 font-medium mb-4">Digital Agencies (Marcas Consumo Masivo)</p>
+              <p class="text-slate-600 leading-relaxed">Desarrollo de campañas para Danone, Actimel, Danacol. Participación activa en la definición de flujos de usuario y mecánicas gamificadas.</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
+            <div class="glass-card p-8">
+              <span class="text-violet-600 font-bold text-sm tracking-widest uppercase">Fundamentos</span>
+              <h3 class="font-display text-2xl font-bold mt-1 text-slate-800">Desarrollo Frontend</h3>
+              <p class="text-slate-500 font-medium mb-4">Formación de Base</p>
+              <p class="text-slate-600 leading-relaxed">Construcción de interfaces sólidas, pixel-perfect y con foco en la interactividad y performance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <button class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-xl transition-all">
+            <i data-lucide="download" class="w-5 h-5"></i> Descargar CV Completo
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contacto" class="py-24 px-6 md:px-0">
+        <div class="max-w-4xl mx-auto glass-card p-12 md:p-20 text-center relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-violet-100 rounded-full blur-3xl opacity-50"></div>
+          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
+          
+          <h2 class="font-display text-4xl font-bold mb-6">¿Trabajamos juntos?</h2>
+          <p class="text-xl text-slate-600 mb-12 max-w-xl mx-auto">
+            Si buscás a alguien que entienda el usuario y el código, me encantaría charlar sobre tu próximo desafío.
+          </p>
+          
+          <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+            <a href="mailto:ayelencampot@gmail.com" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-violet-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-violet-700 transition-all">
+              <i data-lucide="mail" class="w-5 h-5"></i> ayelencampot@gmail.com
+            </a>
+            <div class="flex gap-4">
+              <a href="#" aria-label="LinkedIn" class="group p-4 bg-slate-100 rounded-2xl text-slate-600 hover:bg-violet-100 hover:text-violet-600 transition-all">
+                <img class="brand-icon transition-all group-hover:scale-110" src="https://cdn.simpleicons.org/linkedin/475569" alt="">
+              </a>
+              <a href="#" aria-label="GitHub" class="group p-4 bg-slate-100 rounded-2xl text-slate-600 hover:bg-slate-900 transition-all">
+                <img class="brand-icon transition-all group-hover:scale-110 group-hover:brightness-0 group-hover:invert" src="https://cdn.simpleicons.org/github/475569" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="fixed inset-0 z-[60] hidden">
+      <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm" onclick="closeModal()"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4 md:p-10 pointer-events-none">
+        <div class="bg-white w-full max-w-4xl max-h-full rounded-3xl overflow-hidden relative shadow-2xl flex flex-col pointer-events-auto" id="modal-content">
+          <!-- Content will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-12 border-t border-slate-100 text-center text-slate-400 text-sm">
+      <p>© <span id="current-year"></span> Aye Portfolio. Construido con ❤️ y enfoque UX.</p>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
