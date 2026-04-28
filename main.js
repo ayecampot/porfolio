@@ -95,6 +95,18 @@ const translations = {
 
 let currentLanguage = localStorage.getItem('aye-language') || 'es';
 
+const getBasePath = () => {
+  if (!window.location.hostname.endsWith('github.io')) return '';
+
+  const [repoName] = window.location.pathname.split('/').filter(Boolean);
+  return repoName ? `/${repoName}` : '';
+};
+
+const getAssetPath = (path) => {
+  const normalizedPath = path.replace(/^\/+/, '');
+  return `${getBasePath()}/${normalizedPath}`;
+};
+
 const applyLanguage = (language) => {
   currentLanguage = translations[language] ? language : 'es';
   localStorage.setItem('aye-language', currentLanguage);
@@ -122,12 +134,9 @@ const applyLanguage = (language) => {
   });
 
   document.querySelectorAll('[data-cv-link]').forEach((link) => {
-    const isGitHubPages = window.location.hostname.endsWith('github.io');
-    const href = isGitHubPages
-      ? link.getAttribute(`data-cv-${currentLanguage}-gh`)
-      : link.getAttribute(`data-cv-${currentLanguage}`);
+    const href = link.getAttribute(`data-cv-${currentLanguage}`);
 
-    if (href) link.setAttribute('href', href);
+    if (href) link.setAttribute('href', getAssetPath(href));
   });
 
   initIcons();
