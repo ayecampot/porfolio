@@ -12,12 +12,12 @@ const translations = {
     'nav.about': 'Sobre mí',
     'nav.contact': 'Hablemos',
     'hero.titlePrefix': 'Soy',
-    'hero.copy': 'Perfil híbrido entre Frontend, <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">UX</span> y <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">Research</span>, con experiencia en productos digitales y análisis del comportamiento de usuario. Me enfoco en detectar fricciones, entender necesidades y traducir insights en <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">decisiones de producto</span>.',
+    'hero.copy': 'Trabajo en <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">producto digital</span>, con foco en UX Research y una base técnica en desarrollo frontend. Me involucro en la definición de funcionalidades, el análisis de recorridos y la optimización de experiencias digitales.',
     'hero.cta': 'Ver casos',
     'hero.available': 'Disponible para proyectos',
-    'about.title': 'Quién soy',
-    'about.p1': 'Trabajo en la intersección entre frontend, <span class="text-violet-600 font-semibold">UX</span> y producto, participando en la definición de experiencias digitales en contextos reales de negocio. A lo largo de múltiples campañas, trabajé para marcas de consumo masivo y de alcance global, construyendo flujos desde cero e integrando mecánicas de interacción según el tipo de usuario.',
-    'about.p2': 'Me enfoco en detectar fricciones en la experiencia, entender el comportamiento del usuario y traducir esas observaciones en <span class="text-indigo-600 font-semibold">decisiones de producto</span>, equilibrando siempre necesidades de negocio, experiencia y viabilidad técnica.',
+    'about.title': 'Acerca de mí',
+    'about.p1': 'Soy profesional de producto digital con base técnica en desarrollo frontend y experiencia en la definición de funcionalidades, optimización de recorridos de usuario y trabajo colaborativo con equipos de <span class="text-violet-600 font-semibold">Producto</span>, <span class="text-violet-600 font-semibold">UX</span>, <span class="text-violet-600 font-semibold">Diseño</span> y <span class="text-violet-600 font-semibold">Desarrollo</span>. En Devecoop participo en experiencias digitales para marcas internacionales como Danone, Vichy y Clorox, conectando requerimientos de negocio con soluciones claras y viables.',
+    'about.p2': 'Mi recorrido combina comunicación, ciencias sociales, estrategia digital, analítica y tecnología. Esa mirada me permite analizar problemas desde el usuario, el negocio y la viabilidad técnica, priorizando mejoras según impacto, esfuerzo de implementación y valor para la experiencia.',
     'about.years': 'Años de Exp.',
     'about.campaigns': 'Campañas Pro',
     'about.card.behavior': 'Comportamiento de Usuario',
@@ -25,28 +25,28 @@ const translations = {
     'about.card.gamified': 'Experiencias Gamificadas',
     'about.card.constraints': 'UX bajo restricciones',
     'cases.title': 'Casos de Estudio',
-    'cases.copy': 'Definición de experiencias gamificadas desde cero, tomando decisiones de producto bajo restricciones de tiempo, presupuesto y viabilidad técnica.',
+    'cases.copy': 'Casos centrados en definición de funcionalidades, optimización de recorridos, análisis de fricciones y priorización de mejoras en productos digitales reales.',
     'cases.card1.category': 'UX / Frontend Strategy',
     'cases.card1.title': 'Experiencias Gamificadas',
-    'cases.card1.copy': 'Definición de experiencias gamificadas desde cero, tomando decisiones de producto bajo restricciones de usuario, negocio y viabilidad técnica.',
+    'cases.card1.copy': 'Diseño e implementación de flujos promocionales y gamificados para marcas internacionales, equilibrando claridad para el usuario, objetivos de negocio y alcance técnico.',
     'cases.card2.category': 'User Research',
     'cases.card2.title': 'Oportunidades de Mejora',
-    'cases.card2.copy': 'Identificación de fricciones en flujos promocionales y definición de oportunidades de mejora a partir del análisis de comportamiento de usuario.',
+    'cases.card2.copy': 'Identificación de fricciones en recorridos digitales y definición de oportunidades de mejora a partir de evaluación heurística, métricas y análisis de comportamiento.',
     'cases.details': 'VER DETALLES',
     'cv.title': 'Mi Career Path',
-    'cv.subtitle': 'De frontend a comportamiento de usuario en productos digitales.',
+    'cv.subtitle': 'Producto digital, research, analítica y desarrollo frontend.',
     'cv.now.label': 'Actualidad',
-    'cv.now.title': 'Frontend Developer (SSR) | UX & Comportamiento de Usuario',
-    'cv.now.copy': 'Desarrollo de productos digitales y plataformas promocionales para marcas internacionales. Análisis del comportamiento de usuario en experiencias gamificadas, identificando fricciones en flujos de interacción y optimizando la comprensión y el engagement. Colaboración con equipos de producto, diseño y negocio en entornos internacionales.',
+    'cv.now.title': 'Digital Product & Frontend Developer (SSR)',
+    'cv.now.copy': 'Trabajo en productos y experiencias digitales para marcas internacionales como Danone, Vichy y Clorox. Participo en la definición de funcionalidades, reuniones con clientes, análisis de requerimientos y evaluación de soluciones junto a equipos de Producto, UX, Diseño y Desarrollo. Mi aporte conecta recorrido de usuario, objetivos de negocio y viabilidad técnica para priorizar mejoras con impacto real.',
     'cv.prev.title': 'Estrategia Digital & Desarrollo Web',
-    'cv.prev.copy': 'Desarrollo de sitios web y campañas digitales con foco en experiencia de usuario y conversión. Análisis de comportamiento de audiencias y optimización de contenido en base a métricas. Trabajo con emprendimientos identificando necesidades de usuario y oportunidades de mejora.',
+    'cv.prev.copy': 'Lideré estrategia digital y desarrollo web para clientes, conectando necesidades comerciales con acciones digitales concretas. Trabajé con SEO, SEM, Paid Media, métricas y funnels de conversión para optimizar campañas y detectar oportunidades de mejora. Esta etapa consolidó mi mirada de negocio, análisis de resultados y comunicación directa con stakeholders.',
     'cv.education.label': 'Formación',
     'cv.education.title': 'Base interdisciplinaria en comportamiento, tecnología y negocio',
-    'cv.education.meta': 'Publicidad, Sociología, Informática y Data Analytics',
-    'cv.education.copy': 'Formación en Publicidad y Comunicación, complementada con estudios en Sociología y Ciencia Política, y actualmente cursando un Máster en Dirección de PYMES.<br><br>Este recorrido combina una comprensión del comportamiento humano con una base técnica en desarrollo frontend (JavaScript, React, Laravel, SASS) y conocimientos en análisis de datos.<br><br>Esta integración me permite analizar experiencias digitales considerando tanto al usuario como las restricciones de negocio y la viabilidad técnica.',
+    'cv.education.meta': 'Comunicación, Sociología, Dirección de PYMES, UX Research y Data Analytics',
+    'cv.education.copy': 'Formación en Publicidad y Comunicación, complementada con estudios en Sociología y Ciencia Política, y Máster en Dirección de PYMES finalizado.<br><br>Este recorrido combina comprensión del comportamiento humano, mirada de negocio, experiencia docente y base técnica en desarrollo frontend (JavaScript, React, Laravel Blade, SASS, Git), además de conocimientos en SQL, Google Analytics, funnels y KPIs.<br><br>Esta integración me permite investigar y analizar experiencias digitales considerando usuario, objetivos de negocio, stakeholders y viabilidad técnica.',
     'cv.download': 'Descargar CV Completo',
     'contact.title': '¿Trabajamos juntos?',
-    'contact.copy': 'Si buscás a alguien que entienda el usuario y el código, me encantaría charlar sobre tu próximo desafío.',
+    'contact.copy': 'Si buscás a alguien que conecte research, producto, negocio y desarrollo, me encantaría charlar sobre tu próximo desafío.',
     'footer.text': 'Aye Portfolio. Construido con ❤️ y enfoque UX.'
   },
   en: {
@@ -54,12 +54,12 @@ const translations = {
     'nav.about': 'About',
     'nav.contact': "Let's talk",
     'hero.titlePrefix': "I'm",
-    'hero.copy': 'Hybrid profile across Frontend, <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">UX</span> and <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">Research</span>, with experience in digital products and user behavior analysis. I focus on detecting friction, understanding needs and translating insights into <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">product decisions</span>.',
+    'hero.copy': 'I work in <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">digital product</span>, with a focus on UX Research and a technical foundation in frontend development. I contribute to feature definition, user journey analysis and the optimization of digital experiences.',
     'hero.cta': 'View cases',
     'hero.available': 'Available for projects',
     'about.title': 'About me',
-    'about.p1': 'I work at the intersection of frontend, <span class="text-violet-600 font-semibold">UX</span> and product, helping define digital experiences in real business contexts. Across multiple campaigns, I worked with mass-consumption and global brands, building flows from scratch and adapting interaction mechanics to different users.',
-    'about.p2': 'I focus on detecting experience friction, understanding user behavior and translating those observations into <span class="text-indigo-600 font-semibold">product decisions</span>, always balancing business needs, user experience and technical feasibility.',
+    'about.p1': 'I am a digital product professional with a technical foundation in frontend development and experience defining features, optimizing user journeys and collaborating with <span class="text-violet-600 font-semibold">Product</span>, <span class="text-violet-600 font-semibold">UX</span>, <span class="text-violet-600 font-semibold">Design</span> and <span class="text-violet-600 font-semibold">Engineering</span> teams. At Devecoop, I work on digital experiences for international brands including Danone, Vichy and Clorox, connecting business requirements with clear and feasible solutions.',
+    'about.p2': 'My background combines communication, social sciences, digital strategy, analytics and technology. This perspective helps me analyze problems through user needs, business goals and technical feasibility, prioritizing improvements by impact, implementation effort and experience value.',
     'about.years': 'Years Exp.',
     'about.campaigns': 'Pro Campaigns',
     'about.card.behavior': 'User Behavior',
@@ -67,28 +67,28 @@ const translations = {
     'about.card.gamified': 'Gamified Experiences',
     'about.card.constraints': 'UX under constraints',
     'cases.title': 'Case Studies',
-    'cases.copy': 'Defining gamified experiences from scratch, making product decisions under time, budget and technical feasibility constraints.',
+    'cases.copy': 'Case studies focused on feature definition, user journey optimization, friction analysis and improvement prioritization in real digital products.',
     'cases.card1.category': 'UX / Frontend Strategy',
     'cases.card1.title': 'Gamified Experiences',
-    'cases.card1.copy': 'Defining gamified experiences from scratch while making product decisions under user, business and technical constraints.',
+    'cases.card1.copy': 'Designing and implementing promotional and gamified flows for international brands while balancing user clarity, business goals and technical scope.',
     'cases.card2.category': 'User Research',
     'cases.card2.title': 'Improvement Opportunities',
-    'cases.card2.copy': 'Identifying friction in promotional flows and defining improvement opportunities through user behavior analysis.',
+    'cases.card2.copy': 'Identifying friction in digital journeys and defining improvement opportunities through heuristic evaluation, metrics and behavior analysis.',
     'cases.details': 'VIEW DETAILS',
     'cv.title': 'My Career Path',
-    'cv.subtitle': 'From frontend to user behavior in digital products.',
+    'cv.subtitle': 'Digital product, research, analytics and frontend development.',
     'cv.now.label': 'Current',
-    'cv.now.title': 'Frontend Developer (SSR) | UX & User Behavior',
-    'cv.now.copy': 'Development of digital products and promotional platforms for international brands. User behavior analysis in gamified experiences, identifying friction in interaction flows and improving comprehension and engagement. Collaboration with product, design and business teams in international environments.',
+    'cv.now.title': 'Digital Product & Frontend Developer (SSR)',
+    'cv.now.copy': 'I work on digital products and experiences for international brands including Danone, Vichy and Clorox. I participate in feature definition, client meetings, requirements analysis and solution evaluation alongside Product, UX, Design and Engineering teams. My contribution connects user journeys, business goals and technical feasibility to prioritize improvements with real impact.',
     'cv.prev.title': 'Digital Strategy & Web Development',
-    'cv.prev.copy': 'Development of websites and digital campaigns focused on user experience and conversion. Audience behavior analysis and content optimization based on metrics. Work with small businesses identifying user needs and improvement opportunities.',
+    'cv.prev.copy': 'I led digital strategy and web development for clients, connecting business needs with concrete digital actions. I worked with SEO, SEM, Paid Media, metrics and conversion funnels to optimize campaigns and identify improvement opportunities. This stage strengthened my business perspective, results analysis and direct stakeholder communication.',
     'cv.education.label': 'Education',
     'cv.education.title': 'Interdisciplinary foundation in behavior, technology and business',
-    'cv.education.meta': 'Advertising, Sociology, Computer Science and Data Analytics',
-    'cv.education.copy': 'Background in Advertising and Communication, complemented by studies in Sociology and Political Science, and currently pursuing a Master in SME Management.<br><br>This path combines an understanding of human behavior with a technical foundation in frontend development (JavaScript, React, Laravel, SASS) and data analysis knowledge.<br><br>This integration allows me to analyze digital experiences considering users, business constraints and technical feasibility.',
+    'cv.education.meta': 'Communication, Sociology, SME Management, UX Research and Data Analytics',
+    'cv.education.copy': 'Background in Advertising and Communication, complemented by studies in Sociology and Political Science, and a completed Master in SME Management.<br><br>This path combines an understanding of human behavior, business perspective, teaching experience and a technical foundation in frontend development (JavaScript, React, Laravel Blade, SASS, Git), plus SQL, Google Analytics, funnels and KPI knowledge.<br><br>This integration allows me to research and analyze digital experiences considering users, business goals, stakeholders and technical feasibility.',
     'cv.download': 'Download full CV',
     'contact.title': "Let's work together?",
-    'contact.copy': "If you're looking for someone who understands users and code, I'd love to talk about your next challenge.",
+    'contact.copy': "If you're looking for someone who connects research, product, business and development, I'd love to talk about your next challenge.",
     'footer.text': 'Aye Portfolio. Built with ❤️ and a UX mindset.'
   }
 };
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const CASE_STUDIES = {
   'case-1': {
     title: "Experiencias Gamificadas",
-    subtitle: "Definición bajo restricciones de tiempo, presupuesto y usuario",
+    subtitle: "Definición e implementación bajo restricciones de negocio, usuario y alcance técnico",
     category: "UX / Frontend Strategy",
     color: "from-purple-500 to-indigo-600",
     icon: 'gamepad-2',
@@ -223,55 +223,55 @@ const CASE_STUDIES = {
     sections: [
       {
         title: "Contexto",
-        content: "Participé en campañas digitales gamificadas para marcas de consumo masivo (Actimel, Danacol), donde las experiencias se construían desde cero bajo restricciones de tiempo, presupuesto y requisitos legales.",
+        content: "Participé en productos y campañas digitales para marcas internacionales como Danone, Vichy y Clorox. En este tipo de proyectos, la experiencia se define mientras se equilibran objetivos de negocio, requisitos legales, tiempos de salida y viabilidad técnica.",
         items: [
-          "Tiempos de implementación muy ajustados",
-          "Cambios constantes en el alcance",
+          "Tiempos de implementación acotados",
+          "Cambios de alcance y requerimientos",
           "Restricciones de presupuesto",
           "Requerimientos legales y de negocio"
         ]
       },
       {
         title: "Problema",
-        content: "El principal desafío era construir experiencias gamificadas funcionales y claras para el usuario, equilibrando tiempos de desarrollo, presupuesto, complejidad técnica y objetivos del negocio."
+        content: "El desafío era transformar requerimientos comerciales en flujos digitales claros, funcionales y medibles, cuidando que la experiencia no perdiera valor para el usuario por la complejidad legal, técnica o promocional."
       },
       {
         title: "Mi rol",
-        content: "Trabajé como Frontend Developer con fuerte participación en la definición de la experiencia. Traduje ideas y requerimientos en flujos concretos, tomando decisiones sobre interacción y viabilidad técnica."
+        content: "Trabajé como Digital Product & Frontend Developer, colaborando con Producto, UX, Diseño, Desarrollo y stakeholders del cliente. Participé en la definición de funcionalidades, evaluación de soluciones y traducción de requerimientos de negocio en experiencias implementables."
       },
       {
         title: "Qué hice",
         items: [
-          "Definí flujos de interacción donde la experiencia no estaba especificada",
-          "Integré mecánicas gamificadas en el recorrido del usuario",
-          "Prioricé claridad sobre complejidad innecesaria",
-          "Colaboré en la reducción de complejidad sin perder valor"
+          "Analicé requerimientos y los convertí en flujos de usuario",
+          "Integré mecánicas gamificadas en recorridos promocionales",
+          "Prioricé mejoras considerando impacto, usuario y esfuerzo técnico",
+          "Colaboré en la reducción de complejidad sin perder valor para el negocio"
         ]
       },
     {
         title: "Ejemplos concretos",
         items: [
-          "Actimel – Campaña Sonic (público infantil)\nDefinición de la lógica de juego en web, adaptando interacciones inspiradas en entornos 3D/Unity a una experiencia clara y accesible.",
-          "Danacol – (Público adulto)\nRediseño de la interfaz para reducir la carga cognitiva y enfocar la experiencia en acciones simples y directas."
+          "Actimel - Campaña Sonic (público infantil)\nDefinición de lógica de juego en web, adaptando interacciones inspiradas en entornos 3D/Unity a una experiencia clara y accesible.",
+          "Danacol - Público adulto\nRediseño de interfaz para reducir carga cognitiva y enfocar la experiencia en acciones simples, directas y comprensibles."
         ]
       },
       {
         title: "Enfoque UX",
-        content: "Foco en equilibrar tres dimensiones: Necesidades del negocio, Experiencia del usuario y Viabilidad técnica."
+        content: "Foco en equilibrar tres dimensiones: necesidades del usuario, objetivos de negocio y viabilidad técnica. Ese enfoque permite tomar decisiones de producto con menos incertidumbre y mayor claridad de implementación."
       },
       {
         title: "Aprendizajes",
         items: [
-          "Diseñar en alta incertidumbre",
-          "Decisiones bajo restricciones reales",
-          "Priorizar impacto vs costo de desarrollo"
+          "Diseñar en contextos de alta incertidumbre",
+          "Tomar decisiones bajo restricciones reales",
+          "Priorizar impacto, valor de usuario y costo de desarrollo"
         ]
       }
     ]
   },
   'case-2': {
   title: "Oportunidades de Mejora",
-  subtitle: "Análisis de fricciones en experiencias promocionales digitales",
+  subtitle: "Análisis de fricciones, heurísticas y oportunidades de optimización",
   category: "User Research",
   color: "from-violet-500 to-purple-700",
   icon: 'search',
@@ -279,21 +279,22 @@ const CASE_STUDIES = {
   sections: [
     {
       title: "Contexto",
-      content: "En campañas digitales de consumo masivo, las decisiones suelen priorizar la salida a tiempo por sobre la optimización de la experiencia. Al tratarse de iniciativas de corta duración, en muchos casos no se implementaban herramientas de analytics avanzadas, limitando la capacidad de aprendizaje y mejora basada en datos.",
+      content: "En productos y campañas digitales de corta duración, las decisiones suelen priorizar la salida a tiempo por sobre la optimización de la experiencia. Mi trabajo consistió en observar recorridos, detectar fricciones y proponer mejoras considerando métricas disponibles, objetivos comerciales y viabilidad de implementación.",
       items: [
         "Tiempos de implementación acotados",
         "Presupuesto limitado",
         "Requisitos legales",
-        "Objetivos comerciales"
+        "Objetivos comerciales",
+        "Métricas y funnels no siempre instrumentados en profundidad"
       ]
     },
     {
       title: "Objetivo",
-      content: "Analizar patrones de fricción en la experiencia de usuario e identificar oportunidades de mejora, considerando las restricciones reales del negocio."
+      content: "Analizar patrones de fricción en la experiencia de usuario e identificar oportunidades de mejora accionables, considerando impacto para el usuario, negocio y esfuerzo técnico."
     },
     {
       title: "Enfoque",
-      content: "Análisis cualitativo basado en la observación de múltiples proyectos, la identificación de patrones recurrentes en los flujos de interacción y la evaluación heurística desde la perspectiva del usuario."
+      content: "Análisis cualitativo basado en observación de múltiples proyectos, identificación de patrones recurrentes en flujos de interacción, evaluación heurística y lectura de métricas/funnels cuando estaban disponibles."
     },
     {
       title: "Hallazgos",
@@ -325,7 +326,7 @@ const CASE_STUDIES = {
     },
     {
       title: "Oportunidad de research",
-      content: "Estas hipótesis podrían validarse mediante entrevistas a usuarios, tests de usabilidad y análisis de comportamiento, permitiendo priorizar mejoras basadas en evidencia y reducir la incertidumbre en la toma de decisiones de producto."
+      content: "Estas hipótesis pueden validarse mediante entrevistas a usuarios, tests de usabilidad, evaluación heurística y análisis de comportamiento, metodologías que también dicto como profesora de UX Research en Coderhouse."
     }
   ]
 }
@@ -340,7 +341,7 @@ const ABOUT_CARDS = {
     sections: [
       {
         title: "Focus",
-        content: "I look at how people move through digital experiences, what they understand, where they hesitate and which parts of the flow create unnecessary effort."
+        content: "I look at how people move through digital experiences, what they understand, where they hesitate and which parts of the flow create unnecessary effort, using interviews, usability testing, heuristic evaluation and behavior analysis when the project allows it."
       },
       {
         title: "What I observe",
@@ -348,7 +349,8 @@ const ABOUT_CARDS = {
           "Moments of friction or confusion",
           "Patterns in user decisions and behavior",
           "Mismatch between user expectations and interface logic",
-          "Opportunities to simplify the experience"
+          "Opportunities to simplify the experience",
+          "Signals from metrics, funnels and KPIs"
         ]
       }
     ]
@@ -431,7 +433,7 @@ const ABOUT_CARDS_ES = {
     sections: [
       {
         title: "Foco",
-        content: "Observo cómo las personas recorren experiencias digitales, qué entienden, dónde dudan y qué partes del flujo generan esfuerzo innecesario."
+        content: "Observo cómo las personas recorren experiencias digitales, qué entienden, dónde dudan y qué partes del flujo generan esfuerzo innecesario, usando entrevistas, tests de usabilidad, evaluación heurística y análisis de comportamiento cuando el proyecto lo permite."
       },
       {
         title: "Qué observo",
@@ -439,7 +441,8 @@ const ABOUT_CARDS_ES = {
           "Momentos de fricción o confusión",
           "Patrones en decisiones y comportamiento",
           "Desajustes entre expectativas del usuario y lógica de interfaz",
-          "Oportunidades para simplificar la experiencia"
+          "Oportunidades para simplificar la experiencia",
+          "Señales desde métricas, funnels y KPIs"
         ]
       }
     ]
@@ -515,7 +518,7 @@ const ABOUT_CARDS_ES = {
 const CASE_STUDIES_EN = {
   'case-1': {
     title: "Gamified Experiences",
-    subtitle: "Definition under time, budget and user constraints",
+    subtitle: "Definition and implementation under business, user and technical constraints",
     category: "UX / Frontend Strategy",
     color: "from-purple-500 to-indigo-600",
     icon: 'gamepad-2',
@@ -523,29 +526,29 @@ const CASE_STUDIES_EN = {
     sections: [
       {
         title: "Context",
-        content: "I participated in gamified digital campaigns for mass-consumption brands (Actimel, Danacol), where experiences were built from scratch under time, budget and legal constraints.",
+        content: "I participated in digital products and campaigns for international brands including Danone, Vichy and Clorox. In these projects, the experience is defined while balancing business goals, legal requirements, launch timelines and technical feasibility.",
         items: [
-          "Very tight implementation timelines",
-          "Constant changes in scope",
+          "Limited implementation timelines",
+          "Scope and requirement changes",
           "Budget restrictions",
           "Legal and business requirements"
         ]
       },
       {
         title: "Problem",
-        content: "The main challenge was building functional and clear gamified experiences while balancing development time, budget, technical complexity and business goals."
+        content: "The challenge was translating commercial requirements into clear, functional and measurable digital flows, making sure the experience did not lose user value because of legal, technical or promotional complexity."
       },
       {
         title: "My role",
-        content: "I worked as a Frontend Developer with strong involvement in experience definition, translating ideas and requirements into concrete flows and making decisions around interaction and technical feasibility."
+        content: "I worked as a Digital Product & Frontend Developer, collaborating with Product, UX, Design, Engineering and client stakeholders. I participated in feature definition, solution evaluation and the translation of business requirements into implementable experiences."
       },
       {
         title: "What I did",
         items: [
-          "Defined interaction flows when the experience was not fully specified",
-          "Integrated gamified mechanics into the user journey",
-          "Prioritized clarity over unnecessary complexity",
-          "Helped reduce complexity without losing value"
+          "Analyzed requirements and translated them into user flows",
+          "Integrated gamified mechanics into promotional journeys",
+          "Prioritized improvements by impact, user value and technical effort",
+          "Helped reduce complexity without losing business value"
         ]
       },
       {
@@ -557,21 +560,21 @@ const CASE_STUDIES_EN = {
       },
       {
         title: "UX approach",
-        content: "Focus on balancing three dimensions: business needs, user experience and technical feasibility."
+        content: "Focus on balancing three dimensions: user needs, business goals and technical feasibility. This approach supports product decisions with less uncertainty and clearer implementation criteria."
       },
       {
         title: "Learnings",
         items: [
-          "Designing under uncertainty",
+          "Designing under high uncertainty",
           "Decision-making under real constraints",
-          "Prioritizing impact vs. development cost"
+          "Prioritizing impact, user value and development cost"
         ]
       }
     ]
   },
   'case-2': {
     title: "Improvement Opportunities",
-    subtitle: "Friction analysis in digital promotional experiences",
+    subtitle: "Friction analysis, heuristics and optimization opportunities",
     category: "User Research",
     color: "from-violet-500 to-purple-700",
     icon: 'search',
@@ -579,21 +582,22 @@ const CASE_STUDIES_EN = {
     sections: [
       {
         title: "Context",
-        content: "In mass-consumption digital campaigns, decisions often prioritize launching on time over optimizing the experience. Since these initiatives are short-lived, advanced analytics are often not implemented, limiting learning and data-informed improvement.",
+        content: "In short-lived digital products and campaigns, decisions often prioritize launching on time over optimizing the experience. My work involved observing journeys, detecting friction and proposing improvements while considering available metrics, business goals and implementation feasibility.",
         items: [
           "Limited implementation time",
           "Limited budget",
           "Legal requirements",
-          "Commercial goals"
+          "Commercial goals",
+          "Metrics and funnels not always deeply instrumented"
         ]
       },
       {
         title: "Goal",
-        content: "Analyze user experience friction patterns and identify improvement opportunities while considering real business constraints."
+        content: "Analyze user experience friction patterns and identify actionable improvement opportunities while considering user impact, business goals and technical effort."
       },
       {
         title: "Approach",
-        content: "Qualitative analysis based on observing multiple projects, identifying recurring patterns in interaction flows and applying heuristic evaluation from the user's perspective."
+        content: "Qualitative analysis based on observing multiple projects, identifying recurring patterns in interaction flows, applying heuristic evaluation and reading metrics/funnels when available."
       },
       {
         title: "Findings",
@@ -625,7 +629,7 @@ const CASE_STUDIES_EN = {
       },
       {
         title: "Research opportunity",
-        content: "These hypotheses could be validated through user interviews, usability testing and behavior analysis, helping prioritize evidence-based improvements and reduce uncertainty in product decision-making."
+        content: "These hypotheses can be validated through user interviews, usability testing, heuristic evaluation and behavior analysis, methodologies I also teach as a UX Research Instructor at Coderhouse."
       }
     ]
   }
