@@ -44,6 +44,20 @@
       .glass-card:hover {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       }
+      .contact-card {
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.92));
+        border: 1px solid rgba(167, 139, 250, 0.28);
+        box-shadow:
+          0 24px 70px rgba(15, 23, 42, 0.12),
+          0 2px 8px rgba(124, 58, 237, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      }
+      .contact-card:hover {
+        box-shadow:
+          0 28px 80px rgba(15, 23, 42, 0.15),
+          0 3px 12px rgba(124, 58, 237, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      }
       .gradient-text {
         background: linear-gradient(to right, #7c3aed, #4f46e5);
         -webkit-background-clip: text;
@@ -121,14 +135,14 @@
       }
 
       .hero-underline {
-        text-decoration-thickness: 3px;
-        text-underline-offset: 0.28em;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.16em;
       }
 
       @media (min-width: 768px) {
         .hero-underline {
-          text-decoration-thickness: 4px;
-          text-underline-offset: 0.32em;
+          text-decoration-thickness: 3px;
+          text-underline-offset: 0.18em;
         }
       }
 
@@ -216,7 +230,9 @@
     <nav class="fixed top-0 w-full z-50 px-4 md:px-10 py-6 reveal-up">
       <div class="relative w-full bg-white/70 backdrop-blur-lg rounded-[2rem] md:rounded-full px-6 md:px-8 py-4 border border-slate-200/50 shadow-sm">
         <div class="flex justify-between items-center">
-        <a href="#" class="font-display font-bold text-violet-600 text-2xl tracking-tighter hover:text-violet-700 transition-colors">Aye.</a>
+        <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-violet-600 hover:bg-violet-50 hover:text-violet-700 transition-colors" aria-label="Ir al inicio">
+          <i data-lucide="star" class="h-6 w-6 fill-current"></i>
+        </a>
         <div class="hidden md:flex gap-10 text-sm font-semibold text-slate-600">
           <a href="#sobre-mi" class="hover:text-violet-600 transition-colors" data-i18n="nav.about">Sobre mí</a>
           <a href="#casos" class="hover:text-violet-600 transition-colors" data-i18n="nav.projects">Casos</a>
@@ -263,17 +279,13 @@
             <h1 class="font-display text-6xl md:text-9xl font-bold leading-[0.95] md:leading-[0.9] mb-8 tracking-tighter reveal-up delay-100">
               <span data-i18n="hero.titlePrefix">Soy</span> <span class="gradient-text">Aye!</span>
             </h1>
-            <p class="text-[1.05rem] md:text-2xl text-slate-500 leading-[1.58] md:leading-tight mb-9 md:mb-10 font-light max-w-2xl reveal-up delay-200" data-i18n-html="hero.copy">
-              Trabajo en <span class="hero-underline font-semibold text-slate-900 underline decoration-violet-500">producto digital</span>, con foco en UX Research y una base técnica en desarrollo frontend. Me involucro en la definición de funcionalidades, el análisis de recorridos y la optimización de experiencias digitales.
+            <p class="text-[1.05rem] md:text-2xl text-slate-500 leading-[1.58] md:leading-[1.38] mb-9 md:mb-10 font-light max-w-2xl reveal-up delay-200" data-i18n-html="hero.copy">
+              Desarrollo <span class="hero-underline text-slate-900 underline decoration-violet-500">productos digitales</span> desde una mirada interdisciplinaria que integra UX Research, estrategia de producto y desarrollo frontend. Analizo el comportamiento de usuario, colaboro en la definición de funcionalidades y transformo necesidades de negocio en experiencias digitales de valor.
             </p>
             <div class="flex flex-wrap gap-5 md:gap-6 reveal-up delay-300">
               <a href="#casos" class="bg-violet-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold hover:bg-violet-700 hover:shadow-2xl hover:-translate-y-1 transition-all flex items-center gap-3 text-base md:text-lg">
                 <span data-i18n="hero.cta">Ver casos</span> <i data-lucide="arrow-right" class="w-5 h-5 md:w-6 md:h-6"></i>
               </a>
-              <div class="flex items-center gap-3 md:gap-4 px-5 md:px-6 py-3 md:py-4 glass-card rounded-full pointer-events-none">
-                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span class="text-xs md:text-sm font-bold text-slate-700 uppercase tracking-widest" data-i18n="hero.available">Disponible para proyectos</span>
-              </div>
             </div>
           </div>
           <div class="relative hidden lg:block reveal-scale delay-400">
@@ -304,7 +316,7 @@
       <section id="sobre-mi" class="py-[4.5rem] px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div class="reveal-up scroll-reveal">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-8 text-slate-900 leading-tight" data-i18n="about.title">Acerca de mí</h2>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-8 text-slate-900 leading-tight" data-i18n="about.title">Sobre mí</h2>
             <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
                 <p data-i18n-html="about.p1">
                   Soy profesional de producto digital con base técnica en desarrollo frontend y experiencia en la definición de funcionalidades, optimización de recorridos de usuario y trabajo colaborativo con equipos de <span class="text-violet-600 font-semibold">Producto</span>, <span class="text-violet-600 font-semibold">UX</span>, <span class="text-violet-600 font-semibold">Diseño</span> y <span class="text-violet-600 font-semibold">Desarrollo</span>.
@@ -435,8 +447,22 @@
         </div>
       </div>
 
-      <!-- EXPERIENCIA PREVIA -->
+      <!-- DOCENCIA UX RESEARCH -->
       <div class="relative reveal-up scroll-reveal delay-200">
+        <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
+        <div class="glass-card p-8">
+          <span class="text-violet-600 font-bold text-sm tracking-widest uppercase" data-i18n="cv.teacher.label">Julio 2026 - Actualidad</span>
+          <h3 class="font-display text-2xl font-bold mt-1 text-slate-800" data-i18n="cv.teacher.title">Profesora de UX Research</h3>
+          <p class="text-slate-500 font-medium mb-4">Coderhouse</p>
+          <p class="text-slate-600 leading-relaxed" data-i18n="cv.teacher.copy">
+            Dicto contenidos de UX Research aplicados a productos digitales, incluyendo entrevistas, tests de usabilidad, evaluación heurística y comunicación de insights.
+            Este rol conecta mi experiencia en producto con la formación y mentoría de estudiantes.
+          </p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCIA PREVIA -->
+      <div class="relative reveal-up scroll-reveal delay-300">
         <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
         <div class="glass-card p-8">
           <span class="text-violet-600 font-bold text-sm tracking-widest uppercase">2018 - 2023</span>
@@ -451,7 +477,7 @@
       </div>
 
     <!-- BASE -->
-    <div class="relative reveal-up scroll-reveal delay-300">
+    <div class="relative reveal-up scroll-reveal delay-400">
       <div class="absolute -left-10 t-0 w-4 h-4 bg-violet-600 rounded-full border-4 border-white shadow-sm"></div>
       <div class="glass-card p-8">
         <span class="text-violet-600 font-bold text-sm tracking-widest uppercase" data-i18n="cv.education.label">Formación</span>
@@ -481,16 +507,16 @@
 </section>
       <!-- Contact -->
       <section id="contacto" class="py-[4.5rem] px-6 md:px-0">
-        <div class="max-w-4xl mx-auto glass-card p-12 md:p-20 text-center relative overflow-hidden reveal-scale scroll-reveal">
-          <div class="absolute -top-10 -right-10 w-40 h-40 bg-violet-100 rounded-full blur-3xl opacity-50"></div>
-          <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
+        <div class="max-w-4xl mx-auto glass-card contact-card p-12 md:p-20 text-center relative overflow-hidden reveal-scale scroll-reveal">
+          <div class="absolute -top-10 -right-10 w-44 h-44 bg-violet-200 rounded-full blur-3xl opacity-60"></div>
+          <div class="absolute -bottom-10 -left-10 w-44 h-44 bg-indigo-200 rounded-full blur-3xl opacity-55"></div>
 
-          <h2 class="font-display text-4xl font-bold mb-6" data-i18n="contact.title">¿Trabajamos juntos?</h2>
-          <p class="text-xl text-slate-600 mb-12 max-w-xl mx-auto" data-i18n="contact.copy">
+          <h2 class="relative font-display text-4xl font-bold mb-6 text-slate-950" data-i18n="contact.title">¿Trabajamos juntos?</h2>
+          <p class="relative text-xl text-slate-600 mb-12 max-w-xl mx-auto" data-i18n="contact.copy">
             Si buscás a alguien que conecte research, producto, negocio y desarrollo, me encantaría charlar sobre tu próximo desafío.
           </p>
 
-          <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <div class="relative flex flex-col md:flex-row gap-6 justify-center items-center">
             <a href="mailto:ayelencampot@gmail.com?subject=Consulta%20desde%20portfolio" aria-label="Enviar email a Ayelen" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-violet-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-violet-700 transition-all">
               <i data-lucide="mail" class="w-5 h-5"></i> ayelencampot@gmail.com
             </a>
