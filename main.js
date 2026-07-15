@@ -98,6 +98,7 @@ const translations = {
 };
 
 let currentLanguage = localStorage.getItem('aye-language') || 'es';
+let currentTheme = localStorage.getItem('aye-theme') || (document.documentElement.classList.contains('dark') ? 'dark' : 'light');
 
 const getBasePath = () => {
   if (!window.location.hostname.endsWith('github.io')) return '';
@@ -146,9 +147,25 @@ const applyLanguage = (language) => {
   initIcons();
 };
 
+const applyTheme = (theme) => {
+  currentTheme = theme === 'dark' ? 'dark' : 'light';
+  localStorage.setItem('aye-theme', currentTheme);
+  document.documentElement.classList.toggle('dark', currentTheme === 'dark');
+
+  document.querySelectorAll('.theme-toggle').forEach((button) => {
+    const isDark = currentTheme === 'dark';
+    button.setAttribute('aria-pressed', String(isDark));
+    button.setAttribute('aria-label', isDark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro');
+    button.innerHTML = `<i data-lucide="${isDark ? 'sun' : 'moon'}" class="theme-toggle-icon h-5 w-5"></i>`;
+  });
+
+  initIcons();
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   initIcons();
   applyLanguage(currentLanguage);
+  applyTheme(currentTheme);
 
   const yearSpan = document.getElementById('current-year');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear().toString();
@@ -190,6 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const language = button.getAttribute('data-lang');
       if (language) applyLanguage(language);
+    });
+  });
+
+  document.querySelectorAll('.theme-toggle').forEach((button) => {
+    button.addEventListener('click', () => {
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
     });
   });
 

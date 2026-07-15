@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aye | User Research Portfolio</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem('aye-theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +66,19 @@
           0 28px 80px rgba(15, 23, 42, 0.15),
           0 3px 12px rgba(124, 58, 237, 0.12),
           inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      }
+      .theme-toggle {
+        color: #475569;
+      }
+      .theme-toggle:hover {
+        color: #7c3aed;
+        background: rgba(139, 92, 246, 0.1);
+      }
+      .cv-download-button {
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+      }
+      .cv-download-button:hover {
+        box-shadow: 0 18px 42px rgba(15, 23, 42, 0.22);
       }
       .gradient-text {
         background: linear-gradient(to right, #7c3aed, #4f46e5);
@@ -128,6 +150,140 @@
         background-image: radial-gradient(#8b5cf6 0.5px, transparent 0.5px);
         background-size: 20px 20px;
         opacity: 0.1;
+      }
+
+      html.dark body {
+        background: #080b16;
+        color: #e5e7eb;
+      }
+
+      html.dark ::selection {
+        background: #6d28d9;
+        color: #ffffff;
+      }
+
+      html.dark .site-nav-panel {
+        background: rgba(15, 23, 42, 0.76);
+        border-color: rgba(148, 163, 184, 0.22);
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      html.dark .hero-gradient {
+        background:
+          radial-gradient(circle at 88% 10%, rgba(139, 92, 246, 0.26), transparent 34%),
+          radial-gradient(circle at 8% 92%, rgba(79, 70, 229, 0.2), transparent 34%),
+          linear-gradient(120deg, #090b16 0%, #111426 46%, #171126 72%, #080b16 100%);
+      }
+
+      html.dark .mesh-pattern {
+        opacity: 0.14;
+      }
+
+      html.dark .glass-card {
+        background: rgba(15, 23, 42, 0.74);
+        border-color: rgba(148, 163, 184, 0.2);
+        box-shadow: 0 20px 58px rgba(0, 0, 0, 0.24);
+      }
+
+      html.dark .glass-card:hover {
+        box-shadow: 0 26px 70px rgba(0, 0, 0, 0.32);
+      }
+
+      html.dark .contact-card {
+        background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(20, 24, 43, 0.86));
+        border-color: rgba(167, 139, 250, 0.2);
+        box-shadow:
+          0 18px 52px rgba(0, 0, 0, 0.24),
+          0 2px 8px rgba(139, 92, 246, 0.08),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      html.dark .contact-card:hover {
+        box-shadow:
+          0 20px 58px rgba(0, 0, 0, 0.28),
+          0 2px 10px rgba(139, 92, 246, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      html.dark .contact-glow {
+        opacity: 0.18 !important;
+      }
+
+      html.dark .theme-toggle {
+        color: #c4b5fd;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      html.dark .theme-toggle:hover {
+        color: #ffffff;
+        background: rgba(139, 92, 246, 0.22);
+      }
+
+      html.dark .cv-download-button {
+        background: #ffffff !important;
+        color: #111827 !important;
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        box-shadow:
+          0 18px 42px rgba(0, 0, 0, 0.32),
+          0 0 0 1px rgba(139, 92, 246, 0.18);
+      }
+
+      html.dark .cv-download-button:hover {
+        background: #f5f3ff !important;
+        color: #111827 !important;
+        box-shadow:
+          0 22px 52px rgba(0, 0, 0, 0.36),
+          0 0 0 3px rgba(139, 92, 246, 0.18);
+      }
+
+      html.dark .bg-white,
+      html.dark .bg-slate-100 {
+        background-color: rgba(15, 23, 42, 0.9) !important;
+      }
+
+      html.dark .bg-slate-50 {
+        background-color: #0f172a !important;
+      }
+
+      html.dark .text-slate-950,
+      html.dark .text-slate-900,
+      html.dark .text-slate-800,
+      html.dark .text-slate-700 {
+        color: #f8fafc !important;
+      }
+
+      html.dark .text-slate-600,
+      html.dark .text-slate-500 {
+        color: #cbd5e1 !important;
+      }
+
+      html.dark .text-slate-400 {
+        color: #94a3b8 !important;
+      }
+
+      html.dark .border-slate-100,
+      html.dark .border-slate-200 {
+        border-color: rgba(148, 163, 184, 0.2) !important;
+      }
+
+      html.dark .border-slate-100\/50,
+      html.dark .border-slate-200\/50,
+      html.dark .border-slate-200\/70 {
+        border-color: rgba(148, 163, 184, 0.18) !important;
+      }
+
+      html.dark .hover\:bg-violet-50:hover,
+      html.dark .hover\:bg-violet-100:hover {
+        background-color: rgba(139, 92, 246, 0.18) !important;
+      }
+
+      html.dark #modal-content {
+        background: #0f172a;
+        color: #e5e7eb;
+      }
+
+      html.dark footer {
+        border-color: rgba(148, 163, 184, 0.18);
       }
 
       section[id] {
@@ -228,7 +384,7 @@
 
     <!-- Navbar -->
     <nav class="fixed top-0 w-full z-50 px-4 md:px-10 py-6 reveal-up">
-      <div class="relative w-full bg-white/70 backdrop-blur-lg rounded-[2rem] md:rounded-full px-6 md:px-8 py-4 border border-slate-200/50 shadow-sm">
+      <div class="site-nav-panel relative w-full bg-white/70 backdrop-blur-lg rounded-[2rem] md:rounded-full px-6 md:px-8 py-4 border border-slate-200/50 shadow-sm">
         <div class="flex justify-between items-center">
         <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-violet-600 hover:bg-violet-50 hover:text-violet-700 transition-colors" aria-label="Ir al inicio">
           <i data-lucide="star" class="h-6 w-6 fill-current"></i>
@@ -243,6 +399,9 @@
             <button type="button" class="language-option rounded-full px-3 py-1.5 transition-colors" data-lang="es">ES</button>
             <button type="button" class="language-option rounded-full px-3 py-1.5 transition-colors" data-lang="en">EN</button>
           </div>
+          <button type="button" class="theme-toggle hidden sm:inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors" aria-label="Cambiar modo de color" aria-pressed="false">
+            <i data-lucide="moon" class="theme-toggle-icon h-5 w-5"></i>
+          </button>
           <a href="#contacto" class="bg-violet-600 text-white px-5 md:px-6 py-2 md:py-2.5 rounded-full font-bold hover:bg-violet-700 hover:shadow-lg transition-all text-[0.8rem] md:text-sm" data-i18n="nav.contact">Hablemos</a>
           <button id="mobile-menu-button" type="button" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-slate-700 hover:bg-violet-100 hover:text-violet-600 transition-colors" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false">
             <i data-lucide="menu" class="w-5 h-5"></i>
@@ -258,6 +417,9 @@
               <button type="button" class="language-option rounded-full px-3 py-1.5 transition-colors" data-lang="es">ES</button>
               <button type="button" class="language-option rounded-full px-3 py-1.5 transition-colors" data-lang="en">EN</button>
             </div>
+            <button type="button" class="theme-toggle mt-2 inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors" aria-label="Cambiar modo de color" aria-pressed="false">
+              <i data-lucide="moon" class="theme-toggle-icon h-5 w-5"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -500,7 +662,7 @@
   </div>
 
   <div class="mt-12 text-center reveal-up scroll-reveal delay-400">
-    <a href="src/CV_Ayelen_Campot.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-xl transition-all" data-cv-link data-cv-es="src/CV_Ayelen_Campot.pdf" data-cv-en="src/CV_Ayelen_Campot_en.pdf">
+    <a href="src/CV_Ayelen_Campot.pdf" target="_blank" rel="noopener" class="cv-download-button inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold transition-all" data-cv-link data-cv-es="src/CV_Ayelen_Campot.pdf" data-cv-en="src/CV_Ayelen_Campot_en.pdf">
       <i data-lucide="download" class="w-5 h-5"></i> <span data-i18n="cv.download">Descargar CV Completo</span>
     </a>
   </div>
@@ -508,8 +670,8 @@
       <!-- Contact -->
       <section id="contacto" class="py-[4.5rem] px-6 md:px-0">
         <div class="max-w-4xl mx-auto glass-card contact-card p-12 md:p-20 text-center relative overflow-hidden reveal-scale scroll-reveal">
-          <div class="absolute -top-10 -right-10 w-44 h-44 bg-violet-200 rounded-full blur-3xl opacity-60"></div>
-          <div class="absolute -bottom-10 -left-10 w-44 h-44 bg-indigo-200 rounded-full blur-3xl opacity-55"></div>
+          <div class="contact-glow absolute -top-10 -right-10 w-44 h-44 bg-violet-200 rounded-full blur-3xl opacity-60"></div>
+          <div class="contact-glow absolute -bottom-10 -left-10 w-44 h-44 bg-indigo-200 rounded-full blur-3xl opacity-55"></div>
 
           <h2 class="relative font-display text-4xl font-bold mb-6 text-slate-950" data-i18n="contact.title">¿Trabajamos juntos?</h2>
           <p class="relative text-xl text-slate-600 mb-12 max-w-xl mx-auto" data-i18n="contact.copy">
