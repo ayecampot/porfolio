@@ -12,88 +12,102 @@ const translations = {
     "nav.about": "Sobre mí",
     "nav.contact": "Hablemos",
     "hero.titlePrefix": "Soy",
-    "hero.copy": "<span class=\"text-slate-900 font-semibold\">Product Analyst | UX &amp; Customer Experience | Research</span><br><br>Analizo productos y experiencias digitales para entender qué está pasando, dónde aparecen fricciones y qué oportunidades existen para mejorarlas. Combino Product Analysis, UX Research y Customer Experience <strong class=\"text-violet-600 font-semibold\">con un background técnico para conectar necesidades de usuarios, objetivos de negocio</strong> y posibilidades de implementación.",
+    "hero.copy": "<span class=\"text-slate-900 font-semibold\">Product Manager | Product Analytics &amp; UX Research</span><br><br>Lidero el desarrollo y evolución de productos digitales, conectando necesidades de negocio, comportamiento de usuarios y tecnología. Combino <strong class=\"text-violet-600 font-semibold\">estrategia de producto, análisis de datos y UX Research</strong> para transformar oportunidades en experiencias concretas, medibles y centradas en las personas.",
     "hero.cta": "Ver proyectos",
     "about.title": "Sobre mí",
-    "about.p1": "Mi recorrido empezó en Publicidad, con una pregunta que sigue guiando mi trabajo: cómo se comportan las personas en las experiencias digitales. En marketing digital conecté campañas, audiencias, analytics, funnels y conversiones. Después me acerqué al desarrollo web para entender cómo se construyen los productos y trabajar con mayor fluidez con IT.",
-    "about.p2": "Ese recorrido me acercó al análisis de producto, UX, research y Customer Experience. Hoy trabajo con productos y experiencias digitales internacionales en Devecoop y soy profesora de UX Research e Investigación Publicitaria. Mi foco está en comprender qué ocurre en una experiencia, por qué ocurre y qué podemos cambiar para mejorarla.",
+    "about.p1": "Mi recorrido conecta Marketing y Analytics, Desarrollo Web, UX y Research y Product Management. La formación en Publicidad me dio una base para comprender consumidores, mercados y negocios. El desarrollo web me permitió entender cómo se implementan los productos y evaluar su viabilidad técnica.",
+    "about.p2": "Hoy lidero la definición y ejecución de productos digitales para marcas internacionales en Devecoop, articulando las necesidades de clientes con Diseño, Ingeniería y QA. Uso datos e investigación para orientar su evolución. Soy profesora de UX Research e Investigación Publicitaria y tengo un Máster en Dirección de PYMES.",
     "about.years": "Años de recorrido",
     "about.campaigns": "Productos digitales",
     "about.card.behavior": "UX Research",
-    "about.card.product": "Product Analysis",
+    "about.card.product": "Product Management",
     "about.card.gamified": "Engagement y journeys",
     "about.card.constraints": "Customer Experience",
     "cases.title": "Proyectos destacados",
-    "cases.copy": "Productos y experiencias en los que participé, con foco en los desafíos, decisiones y aprendizajes detrás de cada proyecto.",
-    "cases.card1.category": "PRODUCT / UX / CX",
+    "cases.copy": "Del discovery al lanzamiento y la evolución: mi aporte en la definición de productos, la coordinación de su ejecución y las decisiones basadas en datos.",
+    "cases.card1.category": "PRODUCT MANAGEMENT / DELIVERY",
     "cases.card1.title": "Diseñar la experiencia",
-    "cases.card1.copy": "De un brief a una experiencia concreta: decisiones de producto, UX y negocio para construir journeys simples, medibles y adaptables.",
-    "cases.card2.category": "PRODUCT / CX ANALYTICS",
+    "cases.card1.copy": "MIND / MINDbot, Danone Europa, Kimberly-Clark y Dercos: del objetivo de negocio a la definición de flujos, reglas y experiencias con Diseño e Ingeniería.",
+    "cases.card2.category": "PRODUCT ANALYTICS / UX",
     "cases.card2.title": "Observar, medir, iterar",
-    "cases.card2.copy": "Lo que pasa después del lanzamiento también cambia el producto. Datos, consultas reales y comportamiento ayudan a decidir qué mejorar.",
+    "cases.card2.copy": "Danacol y experiencias por WhatsApp: cómo conecté preguntas de negocio, funnels y evidencia de Customer Experience con decisiones de mejora.",
     "cases.details": "VER DETALLES",
     "cv.title": "Mi recorrido profesional",
-    "cv.subtitle": "Usuarios, datos y tecnología para analizar productos y experiencias.",
+    "cv.subtitle": "Estrategia, ejecución y aprendizaje continuo en productos digitales.",
     "cv.now.label": "Actualidad",
-    "cv.now.title": "Análisis de producto, UX y CX",
-    "cv.now.copy": "En Devecoop participo en Product Analysis, Customer Experience, research y Functional Analysis de experiencias internacionales y multi-idioma. Relevo necesidades de clientes, negocio y usuarios; analizo customer journeys, funnels, comportamiento y métricas en onboarding, registros, promociones y engagement. Colaboro en hipótesis, priorización de mejoras y definición de flujos, reglas de negocio, estados, validaciones y requerimientos funcionales. Trabajo con Producto, UX, Diseño, Frontend, Backend y QA, y acompaño validaciones en QA, preproducción y producción, considerando GDPR y requerimientos regulatorios. En experiencias web y conversacionales, mi experiencia previa en frontend me ayuda a comprender APIs, integraciones, requests, logs y restricciones técnicas.",
-    "cv.teacher.label": "Julio 2026 - Actualidad",
-    "cv.teacher.title": "Profesora de UX Research",
-    "cv.teacher.copy": "En Coderhouse enseño UX Research: formulación del problema, entrevistas, encuestas, usability testing, evaluación heurística y journeys. Trabajo con enfoques cualitativos, cuantitativos y mixtos, síntesis, insights y comunicación de resultados. La docencia me exige explicar decisiones metodológicas y hacer comprensibles problemas complejos.",
-    "cv.prev.title": "Estrategia digital, análisis y medición",
-    "cv.prev.copy": "En Amapola Digital construí la base de mi perfil analítico: conectar objetivos de negocio, comportamiento, medición, análisis y recomendaciones. Trabajé en estrategia digital, campañas, análisis de audiencias, funnels y conversiones, con Google Analytics, Google Tag Manager y definición de eventos. Combiné research de mercado y benchmarking con sitios y journeys digitales, elaboración de informes y recomendaciones a clientes. Coordiné proyectos end-to-end y la relación con stakeholders.",
+    "cv.now.title": "Product Management | Product Analytics & Digital Experiences",
+    "cv.now.copy": "Lidero productos y roadmaps de campañas digitales internacionales de loyalty, gamificación, promociones y engagement. Trabajo directamente con clientes para comprender objetivos y oportunidades, y definir alcance, funcionalidades, flujos y prioridades.",
+    "cv.teacher.label": "2021 - Actualidad",
+    "cv.teacher.title": "Docencia",
+    "cv.teacher.coderhouse": "Profesora de UX Research en Coderhouse",
+    "cv.teacher.isec": "Profesora de Investigación Publicitaria en la Tecnicatura Superior en Publicidad del ISEC",
+    "cv.teacher.copy": "La docencia fortalece mi práctica de investigación, pensamiento analítico y comunicación de decisiones.",
+    "cv.prev.title": "Estrategia digital y gestión de proyectos",
+    "cv.prev.copy": "En Amapola Digital gestioné proyectos de principio a fin y la relación con clientes. Conecté objetivos de negocio con estrategia digital, research de mercado y benchmarking. Trabajé con audiencias, funnels, conversiones, Google Analytics y Google Tag Manager para comunicar hallazgos y orientar decisiones.",
     "cv.education.label": "Formación",
     "cv.education.title": "Comportamiento, negocio y comprensión técnica",
     "cv.education.meta": "Publicidad, ciencias sociales, Dirección de PYMES, UX Research y analítica",
-    "cv.education.copy": "Me formé en Publicidad y Comunicación, complementé mi recorrido con estudios en Sociología y Ciencia Política y finalicé un Máster en Dirección de PYMES. También enseño Investigación Publicitaria.<br><br>Mi experiencia previa en desarrollo me permite comprender qué ocurre detrás de una interfaz, conversar con equipos técnicos y evaluar restricciones y viabilidad sin perder de vista la experiencia de las personas.<br><br>Trabajé con JavaScript, HTML, CSS/SCSS, Laravel Blade, Django Templates, WordPress, APIs y Git, además de debugging y QA. Esa base técnica acompaña mi trabajo de análisis de productos digitales.",
+    "cv.education.copy": "Me formé en Publicidad y Comunicación, complementé mi recorrido con estudios en Sociología y Ciencia Política y finalicé un Máster en Dirección de PYMES. También enseño Investigación Publicitaria.<br><br>Mi experiencia en desarrollo web es un diferencial para decidir sobre producto: me permite evaluar viabilidad, comprender integraciones y conversar con equipos técnicos, manteniendo el foco en las personas y el negocio.",
     "cv.download": "Descargar CV Completo",
-    "contact.title": "De las preguntas a la evidencia",
-    "contact.copy": "Me interesa trabajar en equipos donde haya preguntas complejas sobre usuarios, productos y experiencias que puedan transformarse en evidencia y mejores decisiones.",
-    "footer.text": "Ayelén Campot Ledo · Product Analyst | UX & Customer Experience | Research"
+    "contact.title": "De la oportunidad al producto",
+    "contact.copy": "Me interesa trabajar en productos donde pueda conectar estrategia, ejecución, datos e investigación para mejorar la experiencia y los resultados del negocio.",
+    "footer.text": "Ayelén Campot Ledo · Product Manager | Product Analytics & UX Research",
+    "cases.card3.category": "PRODUCT ANALYTICS / AI",
+    "cases.card3.title": "De datos a decisiones",
+    "cases.card3.copy": "Dashboards de campañas e insights semanales: una propuesta para centralizar datos y comunicar resultados a Marketing y clientes con apoyo de IA.",
+    "cv.now.delivery": "Coordino con Diseño, Ingeniería y QA desde discovery hasta lanzamiento y evolución. Mi participación previa en frontend me permite evaluar restricciones técnicas y acompañar la implementación.",
+    "cv.now.analytics": "Analizo KPIs, funnels, comportamiento y fricciones para orientar mejoras. Creo dashboards y analizo datos con SQL, Tableau y Power BI para conectar el seguimiento del producto con las decisiones de negocio."
   },
   "en": {
     "nav.projects": "Featured projects",
     "nav.about": "About",
     "nav.contact": "Let's talk",
     "hero.titlePrefix": "I'm",
-    "hero.copy": "<span class=\"text-slate-900 font-semibold\">Product Analyst | UX &amp; Customer Experience | Research</span><br><br>I analyze digital products and experiences to understand what is happening, where friction appears and what could improve. I combine Product Analysis, UX Research and Customer Experience <strong class=\"text-violet-600 font-semibold\">with a technical background to connect user needs, business goals</strong> and implementation possibilities.",
+    "hero.copy": "<span class=\"text-slate-900 font-semibold\">Product Manager | Product Analytics &amp; UX Research</span><br><br>I lead the development and evolution of digital products, connecting business needs, user behavior and technology. I combine <strong class=\"text-violet-600 font-semibold\">product strategy, data analysis and UX Research</strong> to turn opportunities into tangible, measurable, people-centered experiences.",
     "hero.cta": "View projects",
     "about.title": "About me",
-    "about.p1": "My background began in Advertising, with a question that still guides my work: how people behave in digital experiences. In digital marketing, I connected campaigns, audiences, analytics, funnels and conversions. I then moved into web development to understand how products are built and work more effectively with technical teams.",
-    "about.p2": "That path brought me closer to product analysis, UX, research and Customer Experience. Today I work on international digital products and experiences at Devecoop and teach UX Research and Advertising Research. My focus is understanding what happens in an experience, why it happens and what we can change to improve it.",
+    "about.p1": "My path connects Marketing and Analytics, Web Development, UX and Research, and Product Management. Studying Advertising gave me a foundation for understanding consumers, markets and business. Web development helped me understand product implementation and assess technical feasibility.",
+    "about.p2": "Today I lead the definition and delivery of digital products for international brands at Devecoop, aligning client needs with Design, Engineering and QA. I use data and research to guide product evolution. I also teach UX Research and Advertising Research and hold a Master in SME Management.",
     "about.years": "Years of experience",
     "about.campaigns": "Digital products",
     "about.card.behavior": "UX Research",
-    "about.card.product": "Product Analysis",
+    "about.card.product": "Product Management",
     "about.card.gamified": "Engagement & journeys",
     "about.card.constraints": "Customer Experience",
     "cases.title": "Featured projects",
-    "cases.copy": "Products and experiences I contributed to, with a focus on the challenges, decisions and lessons behind each project.",
-    "cases.card1.category": "PRODUCT / UX / CX",
+    "cases.copy": "From discovery to launch and iteration: my contribution to product definition, delivery coordination and decisions informed by data.",
+    "cases.card1.category": "PRODUCT MANAGEMENT / DELIVERY",
     "cases.card1.title": "Designing the experience",
-    "cases.card1.copy": "From a brief to a concrete experience: product, UX and business decisions to build simple, measurable and adaptable journeys.",
-    "cases.card2.category": "PRODUCT / CX ANALYTICS",
+    "cases.card1.copy": "MIND / MINDbot, Danone Europe, Kimberly-Clark and Dercos: turning business goals into flows, rules and experiences with Design and Engineering.",
+    "cases.card2.category": "PRODUCT ANALYTICS / UX",
     "cases.card2.title": "Observe, measure, iterate",
-    "cases.card2.copy": "What happens after launch also changes the product. Data, real customer questions and behavior help us decide what to improve.",
+    "cases.card2.copy": "Danacol and WhatsApp experiences: how I connected business questions, funnels and Customer Experience evidence with product improvements.",
     "cases.details": "VIEW DETAILS",
     "cv.title": "My professional journey",
-    "cv.subtitle": "Users, data and technology to analyze products and experiences.",
+    "cv.subtitle": "Strategy, delivery and continuous learning in digital products.",
     "cv.now.label": "Current",
-    "cv.now.title": "Product analysis, UX & CX",
-    "cv.now.copy": "At Devecoop, I contribute to Product Analysis, Customer Experience, research and Functional Analysis for international, multilingual experiences. I gather client, business and user needs, and analyze customer journeys, funnels, behavior and metrics across onboarding, registration, promotions and engagement. I help develop hypotheses, prioritize improvements and define flows, business rules, states, validations and functional requirements. I work with Product, UX, Design, Frontend, Backend and QA, and support validation in QA, staging and production, considering GDPR and regulatory requirements. Across web and conversational experiences, my previous frontend experience helps me understand APIs, integrations, requests, logs and technical constraints.",
-    "cv.teacher.label": "July 2026 - Present",
-    "cv.teacher.title": "UX Research Instructor",
-    "cv.teacher.copy": "At Coderhouse, I teach UX Research: problem framing, interviews, surveys, usability testing, heuristic evaluation and journeys. I cover qualitative, quantitative and mixed methods, synthesis, insights and communicating findings. Teaching requires me to explain methodological decisions and make complex problems understandable.",
-    "cv.prev.title": "Digital strategy, analysis & measurement",
-    "cv.prev.copy": "At Amapola Digital, I built the foundation of my analytical approach: connecting business goals, behavior, measurement, analysis and recommendations. I worked on digital strategy, campaigns, audience analysis, funnels and conversions, using Google Analytics, Google Tag Manager and event definition. I combined market research and benchmarking with websites and digital journeys, reporting and client recommendations. I coordinated projects end-to-end and managed stakeholder relationships.",
+    "cv.now.title": "Product Management | Product Analytics & Digital Experiences",
+    "cv.now.copy": "I lead products and roadmaps for international digital campaigns across loyalty, gamification, promotions and engagement. I work directly with clients to understand goals and opportunities, and define scope, features, flows and priorities.",
+    "cv.teacher.label": "2021 - Present",
+    "cv.teacher.title": "Teaching",
+    "cv.teacher.coderhouse": "UX Research Instructor at Coderhouse",
+    "cv.teacher.isec": "Advertising Research Instructor in the Tecnicatura Superior en Publicidad program at ISEC",
+    "cv.teacher.copy": "Teaching strengthens my research practice, analytical thinking and ability to communicate decisions.",
+    "cv.prev.title": "Digital strategy and project management",
+    "cv.prev.copy": "At Amapola Digital, I managed projects end to end and client relationships. I connected business goals with digital strategy, market research and benchmarking. I worked with audiences, funnels, conversions, Google Analytics and Google Tag Manager to communicate findings and inform decisions.",
     "cv.education.label": "Education",
     "cv.education.title": "Behavior, business & technical understanding",
     "cv.education.meta": "Advertising, social sciences, SME Management, UX Research and analytics",
-    "cv.education.copy": "I studied Advertising and Communication, complemented by Sociology and Political Science studies, and completed a Master in SME Management. I also teach Advertising Research.<br><br>My previous development experience helps me understand what happens behind an interface, work with technical teams and assess constraints and feasibility while keeping people’s experience in focus.<br><br>I have worked with JavaScript, HTML, CSS/SCSS, Laravel Blade, Django Templates, WordPress, APIs and Git, as well as debugging and QA. This technical foundation supports my analysis of digital products.",
+    "cv.education.copy": "I studied Advertising and Communication, complemented my background with Sociology and Political Science studies, and completed a Master in SME Management. I also teach Advertising Research.<br><br>My web development experience strengthens my product decisions: it helps me assess feasibility, understand integrations and work with technical teams while keeping people and business goals in focus.",
     "cv.download": "Download full CV",
-    "contact.title": "From questions to evidence",
-    "contact.copy": "I want to work with teams asking complex questions about users, products and experiences, turning those questions into evidence and better decisions.",
-    "footer.text": "Ayelén Campot Ledo · Product Analyst | UX & Customer Experience | Research"
+    "contact.title": "From opportunity to product",
+    "contact.copy": "I want to work on products where I can connect strategy, delivery, data and research to improve the experience and business outcomes.",
+    "footer.text": "Ayelén Campot Ledo · Product Manager | Product Analytics & UX Research",
+    "cases.card3.category": "PRODUCT ANALYTICS / AI",
+    "cases.card3.title": "From data to decisions",
+    "cases.card3.copy": "Campaign dashboards and weekly insights: a proposal to centralize data and communicate results to Marketing and clients with AI assistance.",
+    "cv.now.delivery": "I coordinate with Design, Engineering and QA from discovery through launch and iteration. My previous frontend contributions help me assess technical constraints and support implementation.",
+    "cv.now.analytics": "I analyze KPIs, funnels, behavior and friction to guide improvements. I create dashboards and analyze data with SQL, Tableau and Power BI to connect product monitoring with business decisions."
   }
 };
 
@@ -242,8 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const CASE_STUDIES = {
   "case-1": {
     "title": "Diseñar la experiencia",
-    "subtitle": "Del brief al journey",
-    "category": "PRODUCT / UX / CX",
+    "subtitle": "Definir, coordinar y lanzar",
+    "category": "PRODUCT MANAGEMENT / DELIVERY",
     "color": "from-purple-500 to-indigo-600",
     "icon": "gamepad-2",
     "note": "Las métricas de campaña corresponden al trabajo global de equipos multidisciplinarios. No se incluyen materiales visuales por confidencialidad.",
@@ -251,17 +265,16 @@ const CASE_STUDIES = {
       {
         "title": "Desde el brief",
         "paragraphs": [
-          "Cada experiencia empieza con una pregunta: cómo conectar lo que necesita hacer la persona con lo que busca el negocio, dentro de las posibilidades del proyecto."
+          "Parto de los objetivos del cliente para definir alcance, funcionalidades, flujos y prioridades. Coordino con Diseño, Ingeniería y QA desde discovery hasta lanzamiento y evolución. Los siguientes casos muestran cómo se concreta ese trabajo."
         ]
       },
       {
-        "title": "MIND",
+        "title": "MIND / MINDbot",
         "paragraphs": [
-          "Después de más de 22 campañas vimos que se repetían registros, puntos, trivias, premios, QR, referidos, validaciones y métricas. Aun así, cada webapp llevaba cerca de tres meses de desarrollo, aunque muchas promociones duraran poco.",
-          "MIND nació como una plataforma white label configurable, con feature flags y módulos reutilizables. Los tiempos de desarrollo podían pasar de unos tres meses a uno.",
-          "Transformo briefs comerciales y creativos en flows concretos. Trabajo con Diseño, detecto posibles problemas de UX y defino con Marketing qué necesita medir cada negocio.",
-          "Propongo métricas que pueden salir de GA4/GTM, logs y base de datos, y colaboro en dashboards custom según las preguntas del cliente.",
-          "Una de las ideas que propuse fue que cada campaña dejara información útil para futuras decisiones de Marketing y Producto, además de reducir tiempos de desarrollo."
+          "Contexto y oportunidad: después de más de 22 campañas promocionales, identificamos registros, puntos, trivias, premios, QR, referidos y validaciones que se repetían. Cada nueva webapp exigía volver a resolver necesidades similares.",
+          "Decisión de producto: convertir esos aprendizajes en MIND / MINDbot, una plataforma modular y configurable de loyalty y engagement. Los módulos reutilizables, feature flags y reglas configurables permiten adaptar experiencias sin definir cada campaña desde cero.",
+          "Mi aporte: traduzco briefs y objetivos de clientes en flujos y requerimientos, trabajo con Diseño sobre el journey y coordino con Ingeniería y QA la implementación y validación.",
+          "Defino con Marketing las preguntas de negocio y propongo medición con GA4/GTM, logs y datos de base de datos. La reutilización, la escalabilidad y la medición orientan la evolución de la plataforma."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">+22 campañas</strong>como aprendizaje previo",
@@ -300,10 +313,12 @@ const CASE_STUDIES = {
         "takeaway": "La idea era que la web se sintiera como una continuación de lo que la persona ya había visto en la campaña."
       },
       {
-        "title": "Actimel / Gaming",
+        "title": "Danone Europa · Actimel / Gaming",
         "paragraphs": [
+          "Contexto: productos digitales de promociones y gamificación para distintos países, con QR, premios y mecánicas de engagement. El desafío era adaptar cada experiencia a su mercado y sus reglas de participación.",
           "En las campañas de Actimel trabajamos con QR, gaming, progresión, coleccionabilidad y engagement. Mi participación estuvo en journeys, reglas, validaciones y adaptación de la experiencia a distintos mercados y contextos.",
-          "Super Mario Bros combinó QR, interacción y participación. En Pokémon, la experiencia sumó coleccionabilidad y contenidos de salud e inmunidad."
+          "Super Mario Bros combinó QR, interacción y participación. En Pokémon, la experiencia sumó coleccionabilidad y contenidos de salud e inmunidad.",
+          "Mi aporte se centró en definir journeys, reglas y validaciones, y articular esos requerimientos con Diseño, Ingeniería y QA. El aprendizaje fue considerar las diferencias entre mercados desde la definición del producto."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">345.326</strong>usuarios únicos · Super Mario Bros",
@@ -317,7 +332,7 @@ const CASE_STUDIES = {
   "case-2": {
     "title": "Observar, medir, iterar",
     "subtitle": "De la evidencia a la mejora",
-    "category": "PRODUCT / CX ANALYTICS",
+    "category": "PRODUCT ANALYTICS / UX",
     "color": "from-violet-500 to-purple-700",
     "icon": "search",
     "note": "Las métricas de campaña corresponden al trabajo global de equipos multidisciplinarios. No se incluyen materiales visuales por confidencialidad.",
@@ -334,7 +349,7 @@ const CASE_STUDIES = {
           "En Danacol había puntos acumulados y puntos disponibles. Al revisar el diseño detecté que el naming y la jerarquía podían generar confusión. La experiencia salió igualmente a producción.",
           "Después, Customer Experience empezó a recibir consultas sobre esa parte del journey. Hablé con CX, revisé los casos y usé esa evidencia para fundamentar un cambio de diseño.",
           "Se modificaron naming y jerarquía y se agregó una card de progreso. Mostraba cuánto faltaba para participar del sorteo y cambiaba de estado al alcanzar el objetivo.",
-          "Después del cambio dejaron de aparecer consultas o quejas relacionadas con esa confusión."
+          "Después del cambio dejaron de aparecer consultas o quejas sobre esa confusión en el seguimiento con CX. Es una señal cualitativa; las métricas de escala de la campaña no miden el impacto de esta mejora."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">33.312</strong>usuarios únicos · escala de la campaña",
@@ -368,6 +383,41 @@ const CASE_STUDIES = {
         "takeaway": "Dato, diagnóstico, oportunidad."
       }
     ]
+  },
+  "case-3": {
+    "title": "De datos a decisiones",
+    "subtitle": "Dashboards de campañas e insights semanales",
+    "category": "PRODUCT ANALYTICS / AI",
+    "color": "from-indigo-500 to-violet-700",
+    "icon": "chart-no-axes-combined",
+    "sections": [
+      {
+        "title": "Contexto y oportunidad",
+        "paragraphs": [
+          "Los datos de campañas se consultaban mediante archivos exportados. Identifiqué la necesidad de centralizarlos para facilitar el seguimiento y responder preguntas de Marketing y los clientes.",
+          "El valor agregado estaba en aprovechar esos datos más allá de la performance de las campañas en las webapps: generar aprendizajes para mejorar campañas posteriores y aportar información al área de Marketing de Danone para orientar sus decisiones."
+        ]
+      },
+      {
+        "title": "Mi rol y decisión de producto",
+        "paragraphs": [
+          "Propuse e implementé dashboards de seguimiento de campañas. Partí de las preguntas de negocio para decidir qué información mostrar y cómo presentarla de forma comprensible."
+        ]
+      },
+      {
+        "title": "Implementación",
+        "paragraphs": [
+          "Utilicé desarrollo asistido por IA, incluyendo Codex y entornos con skills. Incorporé un agente al proceso de elaboración de insights semanales para comunicar los resultados en un lenguaje comprensible para Marketing y los clientes."
+        ]
+      },
+      {
+        "title": "Aprendizaje",
+        "paragraphs": [
+          "El aprendizaje fue que centralizar datos necesita ir acompañado de una interpretación clara: los dashboards permiten consultar la información y los insights semanales la conectan con las preguntas del negocio."
+        ]
+      }
+    ],
+    "note": "No se incluyen datos ni capturas de clientes por confidencialidad."
   }
 };
 
@@ -390,23 +440,23 @@ const ABOUT_CARDS = {
     ]
   },
   "about-frontend": {
-    "title": "Product Analysis",
-    "subtitle": "Connecting evidence, needs and decisions",
+    "title": "Product Management",
+    "subtitle": "From opportunity to delivery",
     "category": "Product Strategy",
     "color": "from-indigo-500 to-blue-600",
     "icon": "brain",
     "sections": [
       {
-        "title": "Focus",
-        "content": "In Product Discovery, I help frame problems, gather needs and formulate hypotheses. Analysis connects business goals, behavior and constraints to inform Product Strategy."
+        "title": "Product definition",
+        "content": "I lead product definition and roadmaps for digital campaigns. I work with clients to understand goals and opportunities, define scope and prioritize features."
       },
       {
-        "title": "How I contribute",
+        "title": "Delivery and iteration",
         "items": [
-          "Functional Analysis: flows, rules, states, validations and requirements.",
-          "Prioritizing improvements by available evidence, value and effort.",
-          "Stakeholder Management: aligning needs and criteria with clients and teams.",
-          "Working with Cross-functional Teams and following through to implementation validation."
+          "Flows, business rules, states, validations and functional requirements.",
+          "Coordination with Design, Engineering and QA from discovery through launch.",
+          "Prioritizing improvements using data, research and feasibility.",
+          "A web development background to support implementation decisions."
         ]
       }
     ]
@@ -471,23 +521,23 @@ const ABOUT_CARDS_ES = {
     ]
   },
   "about-frontend": {
-    "title": "Product Analysis",
-    "subtitle": "Conectar evidencia, necesidades y decisiones",
+    "title": "Product Management",
+    "subtitle": "De la oportunidad a la ejecución",
     "category": "Product Strategy",
     "color": "from-indigo-500 to-blue-600",
     "icon": "brain",
     "sections": [
       {
-        "title": "Foco",
-        "content": "En Product Discovery ayudo a delimitar el problema, relevar necesidades y formular hipótesis. El análisis conecta objetivos de negocio, comportamiento y restricciones para aportar a Product Strategy."
+        "title": "Definición de producto",
+        "content": "Lidero la definición de productos y roadmaps de campañas digitales. Trabajo con clientes para comprender objetivos y oportunidades, definir alcance y priorizar funcionalidades."
       },
       {
-        "title": "Cómo aporto",
+        "title": "Ejecución y evolución",
         "items": [
-          "Functional Analysis: flujos, reglas, estados, validaciones y requerimientos.",
-          "Priorización de mejoras según evidencia disponible, valor y esfuerzo.",
-          "Stakeholder Management: acordar necesidades y criterios con clientes y equipos.",
-          "Trabajo con Cross-functional Teams y seguimiento hasta la validación de la implementación."
+          "Flujos, reglas de negocio, estados, validaciones y requerimientos funcionales.",
+          "Coordinación con Diseño, Ingeniería y QA desde discovery hasta lanzamiento.",
+          "Priorización de mejoras con datos, investigación y criterios de viabilidad.",
+          "Base técnica en desarrollo web para acompañar decisiones de implementación."
         ]
       }
     ]
@@ -536,8 +586,8 @@ const ABOUT_CARDS_ES = {
 const CASE_STUDIES_EN = {
   "case-1": {
     "title": "Designing the experience",
-    "subtitle": "From brief to journey",
-    "category": "PRODUCT / UX / CX",
+    "subtitle": "Define, coordinate and launch",
+    "category": "PRODUCT MANAGEMENT / DELIVERY",
     "color": "from-purple-500 to-indigo-600",
     "icon": "gamepad-2",
     "note": "Campaign metrics reflect the collective work of multidisciplinary teams. Visual materials are omitted for confidentiality.",
@@ -545,17 +595,16 @@ const CASE_STUDIES_EN = {
       {
         "title": "From the brief",
         "paragraphs": [
-          "Each experience starts with a question: how to connect what people need to do with what the business wants to achieve, within the project’s constraints."
+          "I start with client goals to define scope, features, flows and priorities. I coordinate with Design, Engineering and QA from discovery through launch and iteration. The following cases show how that work takes shape."
         ]
       },
       {
-        "title": "MIND",
+        "title": "MIND / MINDbot",
         "paragraphs": [
-          "After more than 22 campaigns, we saw the same elements repeating: registration, points, quizzes, prizes, QR codes, referrals, validations and metrics. Yet each webapp still took around three months to develop, even when the promotion was short-lived.",
-          "MIND became a configurable white-label platform with feature flags and reusable modules. Development could go from roughly three months to one.",
-          "I turn commercial and creative briefs into concrete flows. I work with Design, identify potential UX issues and define with Marketing what each business needs to measure.",
-          "I propose metrics using GA4/GTM, logs and database information, and help shape custom dashboards around each client’s questions.",
-          "One idea I proposed was for each campaign to leave useful information for future Marketing and Product decisions, alongside reducing development time."
+          "Context and opportunity: after more than 22 promotional campaigns, we identified recurring registration, points, quizzes, prizes, QR codes, referrals and validation needs. Each new webapp meant addressing similar needs again.",
+          "Product decision: turn those lessons into MIND / MINDbot, a modular, configurable loyalty and engagement platform. Reusable modules, feature flags and configurable rules allow experiences to be adapted without defining every campaign from scratch.",
+          "My contribution: I translate client briefs and goals into flows and requirements, work with Design on the journey and coordinate implementation and validation with Engineering and QA.",
+          "I define business questions with Marketing and propose measurement using GA4/GTM, logs and database data. Reuse, scalability and measurement guide the platform’s evolution."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">22+ campaigns</strong>as prior learning",
@@ -594,10 +643,12 @@ const CASE_STUDIES_EN = {
         "takeaway": "The idea was for the website to feel like a continuation of what people had already seen in the campaign."
       },
       {
-        "title": "Actimel / Gaming",
+        "title": "Danone Europe · Actimel / Gaming",
         "paragraphs": [
+          "Context: digital promotion and gamification products for different countries, with QR codes, prizes and engagement mechanics. The challenge was adapting each experience to its market and participation rules.",
           "Across Actimel campaigns, we worked with QR codes, gaming, progression, collectibles and engagement. I contributed to journeys, rules, validations and adapting the experience to different markets and contexts.",
-          "Super Mario Bros combined QR codes, interaction and participation. Pokémon added collectibles and health and immunity content."
+          "Super Mario Bros combined QR codes, interaction and participation. Pokémon added collectibles and health and immunity content.",
+          "My contribution focused on defining journeys, rules and validations, and coordinating those requirements with Design, Engineering and QA. The learning was to account for differences between markets during product definition."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">345,326</strong>unique users · Super Mario Bros",
@@ -611,7 +662,7 @@ const CASE_STUDIES_EN = {
   "case-2": {
     "title": "Observe, measure, iterate",
     "subtitle": "From evidence to improvement",
-    "category": "PRODUCT / CX ANALYTICS",
+    "category": "PRODUCT ANALYTICS / UX",
     "color": "from-violet-500 to-purple-700",
     "icon": "search",
     "note": "Campaign metrics reflect the collective work of multidisciplinary teams. Visual materials are omitted for confidentiality.",
@@ -628,7 +679,7 @@ const CASE_STUDIES_EN = {
           "Danacol had accumulated points and available points. During design review, I noticed the naming and hierarchy could cause confusion. The experience still launched with that structure.",
           "Customer Experience then started receiving questions about this part of the journey. I spoke with CX, reviewed the cases and used that evidence to support a design change.",
           "Naming and hierarchy were revised, and a progress card was added. It showed what was needed to enter the prize draw and changed state when the goal was reached.",
-          "After the change, questions or complaints about that confusion stopped appearing."
+          "After the change, questions or complaints about that confusion stopped appearing in CX follow-up. This is a qualitative signal; campaign-scale metrics do not measure the impact of this improvement."
         ],
         "items": [
           "<strong class=\"block text-2xl font-display text-violet-600\">33,312</strong>unique users · campaign scale",
@@ -662,6 +713,41 @@ const CASE_STUDIES_EN = {
         "takeaway": "Data, diagnosis, opportunity."
       }
     ]
+  },
+  "case-3": {
+    "title": "From data to decisions",
+    "subtitle": "Campaign dashboards and weekly insights",
+    "category": "PRODUCT ANALYTICS / AI",
+    "color": "from-indigo-500 to-violet-700",
+    "icon": "chart-no-axes-combined",
+    "sections": [
+      {
+        "title": "Context and opportunity",
+        "paragraphs": [
+          "Campaign data was consulted through exported files. I identified a need to centralize it to support monitoring and answer questions from Marketing and clients.",
+          "The added value was in using this data beyond webapp campaign performance: generating insights to improve future campaigns and providing Danone’s Marketing team with information to guide its decisions."
+        ]
+      },
+      {
+        "title": "My role and product decision",
+        "paragraphs": [
+          "I proposed and implemented campaign monitoring dashboards. I started with business questions to decide what information to show and how to make it understandable."
+        ]
+      },
+      {
+        "title": "Implementation",
+        "paragraphs": [
+          "I used AI-assisted development, including Codex and environments with skills. I incorporated an agent into the weekly insights process to communicate results in language that Marketing and clients could understand."
+        ]
+      },
+      {
+        "title": "Learning",
+        "paragraphs": [
+          "The learning was that centralizing data needs to be accompanied by clear interpretation: dashboards make information available, while weekly insights connect it with business questions."
+        ]
+      }
+    ],
+    "note": "Client data and screenshots are omitted for confidentiality."
   }
 };
 
@@ -671,6 +757,8 @@ const getModalData = (id) => {
 };
 
 // Modal Logic
+let modalTrigger = null;
+
 window.openModal = (id) => {
   const study = getModalData(id);
   if (!study) return;
@@ -680,9 +768,11 @@ window.openModal = (id) => {
 
   if (!modalContainer || !modalContent) return;
 
+  modalTrigger = document.activeElement;
+
   // Build the modal HTML
   modalContent.innerHTML = `
-    <button onclick="closeModal()" class="absolute top-6 right-6 z-10 p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors">
+    <button type="button" aria-label="${currentLanguage === 'es' ? 'Cerrar detalle' : 'Close details'}" onclick="closeModal()" class="absolute top-6 right-6 z-10 p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors">
       <i data-lucide="x" class="w-6 h-6"></i>
     </button>
 
@@ -690,7 +780,7 @@ window.openModal = (id) => {
       <div class="flex items-center gap-2 text-white/80 font-bold text-xs uppercase tracking-widest mb-2">
         <i data-lucide="${study.icon}" class="w-4 h-4"></i> ${study.category}
       </div>
-      <h2 class="font-display text-4xl md:text-5xl font-bold">${study.title}</h2>
+      <h2 id="modal-title" class="font-display text-4xl md:text-5xl font-bold">${study.title}</h2>
       <p class="text-lg text-white/90 mt-2 max-w-2xl">${study.subtitle}</p>
     </div>
 
@@ -731,17 +821,24 @@ window.openModal = (id) => {
 
   modalContainer.classList.remove('hidden');
   document.body.style.overflow = 'hidden'; // Prevent scroll
+  modalContent.querySelector('button').focus({ preventScroll: true });
 };
 
 window.closeModal = () => {
   const modalContainer = document.getElementById('modal-container');
-  if (modalContainer) {
+  if (modalContainer && !modalContainer.classList.contains('hidden')) {
     modalContainer.classList.add('hidden');
     document.body.style.overflow = ''; // Restore scroll
+    modalTrigger?.focus({ preventScroll: true });
   }
 };
 
 // Close on Escape
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') window.closeModal();
+  // Detail views have a single interactive control: keep keyboard focus on Close.
+  if (e.key === 'Tab' && !document.getElementById('modal-container').classList.contains('hidden')) {
+    e.preventDefault();
+    document.querySelector('#modal-content button').focus();
+  }
 });
